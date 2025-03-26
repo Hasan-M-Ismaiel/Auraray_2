@@ -20,7 +20,7 @@
         <nav class="breadcrumbs">
             <div class="container">
                 <ol>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="{{ route('home') }}">Home</a></li>
                     <li class="current">Service Details</li>
                 </ol>
             </div>
@@ -47,7 +47,7 @@
                     <div class="service-box mt-3">
                         <h4>Exporting & Delivery Services</h4>
                         <ul style="list-style-type: none;">
-                            <li><i class="bi bi-check-circle" style="color:rgb(36, 216, 20);"></i> <span>At Al Enayah Al Kamlah, we offer seamless exporting and delivery solutions for our AuraRay products. Your orders will arrive on time and in perfect condition, no matter where you are.</span></li>
+                            <li><i class="bi bi-check-circle" id="check"></i> <span>At Al Enayah Al Kamlah, we offer seamless exporting and delivery solutions for our AuraRay products. Your orders will arrive on time and in perfect condition, no matter where you are.</span></li>
                         </ul>
                     </div><!-- End Services List -->
 

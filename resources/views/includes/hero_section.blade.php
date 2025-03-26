@@ -66,7 +66,7 @@
         </p>
         </p>
         <p class="mt-5" data-aos="fade-up">
-          <a href="#" class="btn btn-get-started">Get Started</a>
+          <a href="#clients" class="btn btn-get-started">Get Started</a>
         </p>
       </div>
     </div>
@@ -107,7 +107,7 @@
               From nourishing shampoos and conditioners to rejuvenating skincare treatments, AuraRay’s carefully crafted products help salon professionals deliver outstanding results.
             </p>
             <p>
-              <a href="#" class="btn-get-started">Get Started</a>
+              <a href="#contact" class="btn-get-started">Contact us</a>
             </p>
           </div>
         </div>

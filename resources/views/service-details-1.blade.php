@@ -20,7 +20,7 @@
         <nav class="breadcrumbs">
             <div class="container">
                 <ol>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="{{ route('home') }}">Home</a></li>
                     <li class="current">Service Details</li>
                 </ol>
             </div>
@@ -47,7 +47,7 @@
                     <div class="service-box mt-3">
                         <h4>Private Label Manufacturing</h4>
                         <ul style="list-style-type: none;">
-                            <li><i class="bi bi-check-circle" style="color:rgb(36, 216, 20);"></i> <span>Create your own custom beauty products with our private label services. Tailored to align with your brand image and quality standards, these products are perfect for entrepreneurs looking to launch their own beauty lines.</span></li>
+                            <li><i class="bi bi-check-circle" id="check"></i> <span>Create your own custom beauty products with our private label services. Tailored to align with your brand image and quality standards, these products are perfect for entrepreneurs looking to launch their own beauty lines.</span></li>
                         </ul>
                     </div><!-- End Services List -->
 

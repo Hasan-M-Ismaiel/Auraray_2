@@ -7,7 +7,7 @@
                     <p class="mb-4">
                     <div class="footer-contact">
                         <p>Al Enayah Al Kamlah Manufacture Of Cosmetic Tools & Supplies L.L.C</p>
-                        <p class="mt-3"><strong>Location:</strong> <span>Sajaa Industrial | UAE, Sharjah</span></p>
+                        <p class="mt-3"><strong>Location:</strong> <span>Sajaa Industrial <span id="check">|</span> UAE, Sharjah</span></p>
                         <p class="mt-3"><strong>Phone:</strong> <span>+971 6 715 5323</span></p>
                         <p><strong>Email:</strong> <span><a href="mailto:info@auraray.ae">info@auraray.ae</a></span></p>
                     </div>
@@ -19,7 +19,7 @@
                     <ul class="list-unstyled float-start me-5">
                         <li><a href="{{ route('home') }}"> Home</a></li>
                         <li><a href="{{ route('home') }}#about"> About us</a></li>
-                        <li><a href="{{ route('home') }}#services"> Services</a></li>
+                        <li><a href="{{ route('home') }}#services-2"> Services</a></li>
                     </ul>
                 </div>
             </div>
@@ -28,15 +28,15 @@
                     <h3 class="widget-heading">Our Services</h3>
                     <ul class="list-unstyled footer-blog-entry">
                         <li>
-                            <span class="d-block date">May 3, 2020</span>
+                            <span class="d-block date">Service 1</span>
                             <a href="{{ route('service_1') }}">Private Label Manufacturing</a>
                         </li>
                         <li>
-                            <span class="d-block date">May 3, 2020</span>
+                            <span class="d-block date">Service 2</span>
                             <a href="{{ route('service_2') }}">Beauty Kits for Hotels</a>
                         </li>
                         <li>
-                            <span class="d-block date">May 3, 2020</span>
+                            <span class="d-block date">Service 3</span>
                             <a href="{{ route('service_3') }}">Exporting & Delivery Services</a>
                         </li>
                     </ul>
@@ -56,10 +56,7 @@
                             <a href="#"><span class="bi bi-linkedin"></span></a>
                         </li>
                         <li>
-                            <a href="#"><span class="bi bi-google"></span></a>
-                        </li>
-                        <li>
-                            <a href="#"><span class="bi bi-google-play"></span></a>
+                            <a href="#"><span class="bi bi-instagram"></span></a>
                         </li>
                     </ul>
                 </div>
@@ -92,7 +89,6 @@
             <p>© <span>Copyright</span> <strong class="px-1 sitename">AuraRay</strong> <span>All Rights Reserved</span></p>
             <div class="credits">
                 Made with love UAE-2025
-                 <!-- <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
             </div>
         </div>
     </div>

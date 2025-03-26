@@ -20,7 +20,7 @@
         <nav class="breadcrumbs">
             <div class="container">
                 <ol>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="{{ route('home') }}">Home</a></li>
                     <li class="current">Service Details</li>
                 </ol>
             </div>
@@ -47,7 +47,7 @@
                     <div class="service-box mt-3">
                         <h4>Beauty Kits for Hotels</h4>
                         <ul style="list-style-type: none;">
-                            <li><i class="bi bi-check-circle" style="color:rgb(36, 216, 20);"></i> <span>Elevate the guest experience with our bespoke beauty kits designed specifically for the hospitality industry. Packed with premium, salon-quality products, these kits ensure guests feel pampered and cared for during their stay.</span></li>
+                            <li><i class="bi bi-check-circle" id="check"></i> <span>Elevate the guest experience with our bespoke beauty kits designed specifically for the hospitality industry. Packed with premium, salon-quality products, these kits ensure guests feel pampered and cared for during their stay.</span></li>
                         </ul>
                     </div><!-- End Services List -->
 

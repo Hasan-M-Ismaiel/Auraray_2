@@ -8,7 +8,7 @@
 
 
 <!-- Start Why us Area -->
-@include('includes.Why_us')
+@include('includes.why_us')
 <!-- End Why us Area -->
 
 

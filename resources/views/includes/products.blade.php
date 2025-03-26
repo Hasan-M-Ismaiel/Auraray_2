@@ -63,14 +63,12 @@
                             </select>
                         </div>
                         <div class="col-12 text-center">
-                            <button id="search" class="btn search_ theme-btn w-100" type="submit" style="color:rgb(85, 228, 56);">Search</button>
+                            <button id="search" class="btn search_ theme-btn w-100" type="submit">Search</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
