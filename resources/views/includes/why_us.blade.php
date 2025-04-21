@@ -29,24 +29,24 @@
         <div class="row mb-5 count-numbers">
 
           <!-- Start Stats Item -->
-          <div class="col-4 counter" data-aos="fade-up" data-aos-delay="100">
+          <!-- <div class="col-4 counter" data-aos="fade-up" data-aos-delay="100">
             <span data-purecounter-separator="true" data-purecounter-start="0" data-purecounter-end="3919" data-purecounter-duration="1" class="purecounter number"></span>
             <span class="d-block">Coffee</span>
-          </div>
+          </div> -->
           <!-- End Stats Item -->
 
           <!-- Start Stats Item -->
-          <div class="col-4 counter" data-aos="fade-up" data-aos-delay="200">
+          <!-- <div class="col-4 counter" data-aos="fade-up" data-aos-delay="200">
             <span data-purecounter-separator="true" data-purecounter-start="0" data-purecounter-end="2831" data-purecounter-duration="1" class="purecounter number"></span>
             <span class="d-block">Codes</span>
-          </div>
+          </div> -->
           <!-- End Stats Item -->
 
           <!-- Start Stats Item -->
-          <div class="col-4 counter" data-aos="fade-up" data-aos-delay="300">
+          <!-- <div class="col-4 counter" data-aos="fade-up" data-aos-delay="300">
             <span data-purecounter-separator="true" data-purecounter-start="0" data-purecounter-end="1914" data-purecounter-duration="1" class="purecounter number"></span>
             <span class="d-block">Projects</span>
-          </div>
+          </div> -->
           <!-- End Stats Item -->
 
         </div>

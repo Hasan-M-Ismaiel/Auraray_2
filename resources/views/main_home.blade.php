@@ -13,7 +13,7 @@
 
 
 <!-- Start Hero Area -->
-@include('includes.ingredients')
+<!--  @__include('includes.ingredients') -->
 <!-- End Hero Area -->
 
 <!-- Start products Area -->
