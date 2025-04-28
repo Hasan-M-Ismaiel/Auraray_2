@@ -38,10 +38,10 @@
               <img src="assets/img/about_1.png" alt="Image" class="img-fluid">
             </div>
             <div class="swiper-slide">
-              <img src="assets/img/about_2.png" alt="Image" class="img-fluid">
+              <img src="assets/img/about_2.jpg" alt="Image" class="img-fluid">
             </div>
             <div class="swiper-slide">
-              <img src="assets/img/about_3.png" alt="Image" class="img-fluid">
+              <img src="assets/img/about_3.jpg" alt="Image" class="img-fluid">
             </div>
           </div>
           <div class="swiper-pagination"></div>

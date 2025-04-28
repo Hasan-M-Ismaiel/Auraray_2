@@ -25,7 +25,7 @@
                             <div class="services-icon">
                                 <i class="bi bi-box2-heart-fill"></i>
                             </div>
-                            <a href="{{ route('service_1') }}">
+                            <a href="{{ route('service_1') }}" target="_blank">
                                 <div>
                                     <h3>Private Label Manufacturing</h3>
                                     <p>Create Your Own Brand with Custom Beauty Products</p>
@@ -38,7 +38,7 @@
                             <div class="services-icon">
                                 <i class="bi bi-building-fill-check"></i>
                             </div>
-                            <a href="{{ route('service_2') }}">
+                            <a href="{{ route('service_2') }}" target="_blank">
                                 <div>
                                     <h3>Beauty Kits for Hotels</h3>
                                     <p>Enhance Your Hotel Experience with Luxury Beauty Kits</p>
@@ -51,7 +51,7 @@
                             <div class="services-icon">
                                 <i class="bi bi-truck"></i>
                             </div>
-                            <a href="{{ route('service_3') }}">
+                            <a href="{{ route('service_3') }}" target="_blank">
                                 <div>
                                     <h3>Exporting & Delivery Services</h3>
                                     <p>Reliable Exporting and Bulk Shipping of Premium Beauty Products</p>
