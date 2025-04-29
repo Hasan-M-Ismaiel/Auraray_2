@@ -7,7 +7,7 @@
 
       <div class="col-lg-5">
         <div class="images-overlap">
-          <img src="assets/img/about_section_2.jpg" alt="student" class="img-fluid img-1" data-aos="fade-up">
+          <img src="assets/img/about_section_2.png" alt="student" class="img-fluid img-1" data-aos="fade-up">
         </div>
       </div>
 

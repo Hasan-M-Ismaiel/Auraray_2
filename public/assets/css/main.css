@@ -2685,3 +2685,24 @@ section,
   color: white !important;
   border: 1px solid #d8c957 !important;
 }
+
+
+/* logo animation */
+@keyframes floatImage {
+  0% {
+    transform: translate(0, 0);
+  }
+  
+
+  50% {
+    transform: translate(0px, -100px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.img-wrap .img img {
+  animation: floatImage 6s ease-in-out infinite;
+}

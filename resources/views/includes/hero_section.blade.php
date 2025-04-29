@@ -38,10 +38,7 @@
               <img src="assets/img/about_1.png" alt="Image" class="img-fluid">
             </div>
             <div class="swiper-slide">
-              <img src="assets/img/about_2.jpg" alt="Image" class="img-fluid">
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/about_3.jpg" alt="Image" class="img-fluid">
+              <img src="assets/img/about_2.png" alt="Image" class="img-fluid">
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -79,9 +76,9 @@
     <div class="content">
       <div class="row justify-content-center">
         <div class="col-sm-12 col-md-5 col-lg-4 col-xl-4 order-lg-2 offset-xl-1 mb-4">
-          <div class="img-wrap text-center text-md-left" data-aos="fade-up" data-aos-delay="100">
+          <div class="img-wrap d-flex justify-content-center align-items-center" style="height: 100%;" data-aos="fade-up" data-aos-delay="100">
             <div class="img">
-              <img src="assets/img/img_parallex/image2.png" alt="circle image" class="img-fluid">
+              <img src="{{ asset('assets/img/logo_.png') }}" class="img-fluid mt-4" loading="lazy">
             </div>
           </div>
         </div>

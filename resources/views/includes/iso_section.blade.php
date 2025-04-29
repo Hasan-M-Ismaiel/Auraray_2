@@ -124,13 +124,13 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="assets/img/iso/2.jpg" alt="Image" class="img-fluid">
+                            <img src="assets/img/iso/2.png" alt="Image" class="img-fluid">
                         </div>
                         <div class="swiper-slide">
-                            <img src="assets/img/iso/3.jpg" alt="Image" class="img-fluid">
+                            <img src="assets/img/iso/3.png" alt="Image" class="img-fluid">
                         </div>
                         <div class="swiper-slide">
-                            <img src="assets/img/iso/4.jpg" alt="Image" class="img-fluid">
+                            <img src="assets/img/iso/4.png" alt="Image" class="img-fluid">
                         </div>
                     </div>
                 </div>
