@@ -39,6 +39,10 @@
                             <span class="d-block date">Service 3</span>
                             <a href="{{ route('service_3') }}">Exporting & Delivery Services</a>
                         </li>
+                        <li>
+                            <span class="d-block date">Service 4</span>
+                            <a href="{{ route('home') }}#tabs">Commitment to Quality</a>
+                        </li>
                     </ul>
                 </div>
             </div>
