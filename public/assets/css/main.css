@@ -2706,3 +2706,36 @@ section,
 .img-wrap .img img {
   animation: floatImage 6s ease-in-out infinite;
 }
+
+/* image services cover */
+.carousel-image-wrapper {
+  position: relative;
+}
+
+.carousel-image-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  z-index: 1;
+}
+
+.caption-overlay {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 15px;
+}
+

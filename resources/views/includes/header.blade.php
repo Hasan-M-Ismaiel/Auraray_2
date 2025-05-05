@@ -10,9 +10,9 @@
             <ul>
                 <li><a href="{{ route('home') }}" class="active">Home<br></a></li>
                 <li><a href="{{ route('home') }}#about">About Us</a></li>
-                <li><a href="{{ route('home') }}#tabs">QA</a></li>
                 <li><a href="{{ route('home') }}#product ">Products</a></li>
                 <li><a href="{{ route('home') }}#services-2">Services</a></li>
+                <li><a href="{{ route('home') }}#tabs">Quality</a></li>
                 <li><a href="{{ route('home') }}#contact ">Contact Us</a></li>
                 <li><a href="{{ asset('assets/catalog/Auraray.pdf') }}"><i class="bi bi-download me-2" id="Catalog_icon"></i>Catalog</a></li>
             </ul>

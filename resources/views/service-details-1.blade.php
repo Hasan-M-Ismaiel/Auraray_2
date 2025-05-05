@@ -63,7 +63,7 @@
                 </div>
 
                 <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-                    <img src="assets/img/services_1.png" alt="" class="img-fluid services-img">
+                    <img src="assets/img/services_1.png" alt="" class="img-fluid services-img" loading="lazy">
                 </div>
 
             </div>
