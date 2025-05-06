@@ -33,7 +33,7 @@
                                     <div class="carousel-image-wrapper">
                                         <img src="assets/img/services_1.png" alt="" loading="lazy" class="d-block w-100" alt="...">
                                         <div class="overlay"></div>
-                                        <div class="carousel-caption caption-overlay d-none d-md-block">
+                                        <div class="caption-overlay d-none d-md-block">
                                             <h5 style="color: whitesmoke;">Private Label Manufacturing</h5>
                                             <p style="color: whitesmoke;">Create Your Own Brand with Custom Beauty Products</p>
                                         </div>
@@ -45,7 +45,7 @@
                                     <div class="carousel-image-wrapper">
                                         <img src="assets/img/services_2.png" alt="" loading="lazy" class="d-block w-100" alt="...">
                                         <div class="overlay"></div>
-                                        <div class="carousel-caption caption-overlay d-none d-md-block">
+                                        <div class="caption-overlay d-none d-md-block">
                                             <h5 style="color: whitesmoke;">Beauty Kits for Hotels</h5>
                                             <p style="color: whitesmoke;">Enhance Your Hotel Experience with Luxury Beauty Kits</p>
                                         </div>
@@ -57,7 +57,7 @@
                                     <div class="carousel-image-wrapper">
                                         <img src="assets/img/services_3.png" alt="" loading="lazy" class="d-block w-100" alt="...">
                                         <div class="overlay"></div>
-                                        <div class="carousel-caption caption-overlay d-none d-md-block">
+                                        <div class="caption-overlay d-none d-md-block">
                                             <h5 style="color: whitesmoke;">Exporting & Delivery Services</h5>
                                             <p style="color: whitesmoke;"> Reliable Exporting and Bulk Shipping of Premium Beauty Products</p>
                                         </div>
@@ -77,46 +77,6 @@
                 </div>
 
             </div>
-
-            <!-- <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-                        <div class="services-item" data-aos="fade-up" data-aos-delay="">
-                            <div class="services-icon">
-                                <i class="bi bi-box2-heart-fill"></i>
-                            </div>
-                            <div>
-                                <a href="{{ route('service_1') }}">
-                                    <h3><u>Private Label Manufacturing</u></h3>
-                                </a>
-                                <p>Create Your Own Brand with Custom Beauty Products</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-                        <div class="services-item" data-aos="fade-up" data-aos-delay="100">
-                            <div class="services-icon">
-                                <i class="bi bi-building-fill-check"></i>
-                            </div>
-                            <div>
-                                <a href="{{ route('service_2') }}">
-                                    <h3><u>Beauty Kits for Hotels</u></h3>
-                                </a>
-                                <p>Enhance Your Hotel Experience with Luxury Beauty Kits</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-                        <div class="services-item" data-aos="fade-up" data-aos-delay="200">
-                            <div class="services-icon">
-                                <i class="bi bi-truck"></i>
-                            </div>
-                            <div>
-                                <a href="{{ route('service_3') }}">
-                                    <h3><u>Exporting & Delivery Services</u></h3>
-                                </a>
-                                <p>Reliable Exporting and Bulk Shipping of Premium Beauty Products</p>
-                            </div>
-                        </div>
-                    </div> -->
         </div>
     </div>
     </div>
