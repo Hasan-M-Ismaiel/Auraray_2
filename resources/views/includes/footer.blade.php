@@ -20,6 +20,9 @@
                         <li><a href="{{ route('home') }}"> Home</a></li>
                         <li><a href="{{ route('home') }}#about"> About us</a></li>
                         <li><a href="{{ route('home') }}#services-2"> Services</a></li>
+                        <li><a href="{{ route('home') }}#tabs">Quality</a></li>
+                        
+
                     </ul>
                 </div>
             </div>
@@ -28,20 +31,13 @@
                     <h3 class="widget-heading">Our Services</h3>
                     <ul class="list-unstyled footer-blog-entry">
                         <li>
-                            <span class="d-block date">Service 1</span>
                             <a href="{{ route('service_1') }}">Private Label Manufacturing</a>
                         </li>
                         <li>
-                            <span class="d-block date">Service 2</span>
                             <a href="{{ route('service_2') }}">Beauty Kits for Hotels</a>
                         </li>
                         <li>
-                            <span class="d-block date">Service 3</span>
                             <a href="{{ route('service_3') }}">Exporting & Delivery Services</a>
-                        </li>
-                        <li>
-                            <span class="d-block date">Service 4</span>
-                            <a href="{{ route('home') }}#tabs">Commitment to Quality</a>
                         </li>
                     </ul>
                 </div>
@@ -52,9 +48,6 @@
                     <ul class="list-unstyled social-icons light mb-3">
                         <li>
                             <a href="#"><span class="bi bi-facebook"></span></a>
-                        </li>
-                        <li>
-                            <a href="#"><span class="bi bi-twitter-x"></span></a>
                         </li>
                         <li>
                             <a href="#"><span class="bi bi-linkedin"></span></a>

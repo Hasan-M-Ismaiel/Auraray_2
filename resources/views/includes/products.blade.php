@@ -54,8 +54,6 @@
                         <div class="col-6 col-md-3">
                             <select id="size" class="form-select theme-select">
                                 <option class="option_" selected>Size</option>
-                                <!-- Options will change dynamically -->
-
                                 <!-- <option class="option_" value="125ML">125ML</option>
                                 <option class="option_" value="1000ML">1000ML</option>
                                 <option class="option_" value="3780ML">3780ML</option>

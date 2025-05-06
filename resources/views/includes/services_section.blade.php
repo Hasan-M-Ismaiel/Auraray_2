@@ -29,7 +29,7 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <a href="{{ route('service_1') }}" target="_blank">
+                                <a href="{{ route('service_1') }}">
                                     <div class="carousel-image-wrapper">
                                         <img src="assets/img/services_1.png" alt="" loading="lazy" class="d-block w-100" alt="...">
                                         <div class="overlay"></div>
@@ -41,7 +41,7 @@
                                 </a>
                             </div>
                             <div class="carousel-item">
-                                <a href="{{ route('service_2') }}" target="_blank">
+                                <a href="{{ route('service_2') }}">
                                     <div class="carousel-image-wrapper">
                                         <img src="assets/img/services_2.png" alt="" loading="lazy" class="d-block w-100" alt="...">
                                         <div class="overlay"></div>
@@ -53,7 +53,7 @@
                                 </a>
                             </div>
                             <div class="carousel-item">
-                                <a href="{{ route('service_3') }}" target="_blank">
+                                <a href="{{ route('service_3') }}">
                                     <div class="carousel-image-wrapper">
                                         <img src="assets/img/services_3.png" alt="" loading="lazy" class="d-block w-100" alt="...">
                                         <div class="overlay"></div>
@@ -84,7 +84,7 @@
                                 <i class="bi bi-box2-heart-fill"></i>
                             </div>
                             <div>
-                                <a href="{{ route('service_1') }}" target="_blank">
+                                <a href="{{ route('service_1') }}">
                                     <h3><u>Private Label Manufacturing</u></h3>
                                 </a>
                                 <p>Create Your Own Brand with Custom Beauty Products</p>
@@ -97,7 +97,7 @@
                                 <i class="bi bi-building-fill-check"></i>
                             </div>
                             <div>
-                                <a href="{{ route('service_2') }}" target="_blank">
+                                <a href="{{ route('service_2') }}">
                                     <h3><u>Beauty Kits for Hotels</u></h3>
                                 </a>
                                 <p>Enhance Your Hotel Experience with Luxury Beauty Kits</p>
@@ -110,7 +110,7 @@
                                 <i class="bi bi-truck"></i>
                             </div>
                             <div>
-                                <a href="{{ route('service_3') }}" target="_blank">
+                                <a href="{{ route('service_3') }}">
                                     <h3><u>Exporting & Delivery Services</u></h3>
                                 </a>
                                 <p>Reliable Exporting and Bulk Shipping of Premium Beauty Products</p>

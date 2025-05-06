@@ -1,7 +1,7 @@
 <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
     @if ($products->count())
     @foreach ($products as $product)
-    <div class="col-lg-4 col-md-6 product-item isotope-item filter-app">
+    <div class="col-lg-2 col-md-4 col-sm-6 product-item isotope-item filter-app">
         <img src="{{ asset($product->image) }}" class="img-fluid" alt="">
         <div class="product-info">
             <h4>Auraray</h4>
