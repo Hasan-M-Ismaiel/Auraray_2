@@ -296,7 +296,7 @@
             "Shampoo": ["1000ML", "4500ML"],
             "Shower gel": ["1000ML", "4500ML"],
             "Conditioner": ["1000ML", "4500ML"],
-            "Serum": ["128ML"],
+            "Serum": ["125ML"],
             "Mask": ["1000ML"],
             "Shower scrub": ["1000ML"],
             "Massage oil": ["1000ML", "500ML", "3780ML"],
