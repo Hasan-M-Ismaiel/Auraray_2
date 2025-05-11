@@ -282,57 +282,84 @@
 
     <!--search dynamic select-->
     <script>
+        const typeSelect = document.getElementById('type');
+        const sizeSelect = document.getElementById('size');
+        const flavorContainer = document.getElementById('flavor-container');
+        const extractContainer = document.getElementById('extract-container');
+
+        const typeOptions = {
+            "Hair Care": ["Shampoo", "Conditioner", "Serum", "Mask"],
+            "Skin Care": ["Lotion", "Shower gel", "Shower scrub", "Massage oil"]
+        };
+
+        const sizeOptions = {
+            "Shampoo": ["1000ML", "4500ML"],
+            "Shower gel": ["1000ML", "4500ML"],
+            "Conditioner": ["1000ML", "4500ML"],
+            "Serum": ["128ML"],
+            "Mask": ["1000ML"],
+            "Shower scrub": ["1000ML"],
+            "Massage oil": ["1000ML", "500ML", "3780ML"],
+            "Lotion": ["3780ML", "1000ML"]
+        };
+
+        // Hide all dependent filters on load
+        document.addEventListener("DOMContentLoaded", function() {
+            typeSelect.parentElement.style.display = "none";
+            flavorContainer.style.display = "none";
+            extractContainer.style.display = "none";
+            sizeSelect.parentElement.style.display = "none";
+        });
+
         // When the category is changed
         document.getElementById('category').addEventListener('change', function() {
-            var category = this.value;
+            const category = this.value;
 
-            // Reset Type options
-            var typeSelect = document.getElementById('type');
-            typeSelect.innerHTML = '<option class="option_" selected>Type</option>';
+            // Reset all next fields
+            typeSelect.innerHTML = '<option selected>Type</option>';
+            sizeSelect.innerHTML = '<option selected>Size</option>';
+            sizeSelect.parentElement.style.display = "none";
+            flavorContainer.style.display = "none";
+            extractContainer.style.display = "none";
 
-            // Reset size options
-            var sizeSelect = document.getElementById('size');
-            sizeSelect.innerHTML = '<option class="option_" selected>Size</option>';
+            // Populate and show type
+            if (typeOptions[category]) {
+                typeOptions[category].forEach(type => {
+                    const option = document.createElement("option");
+                    option.value = type;
+                    option.textContent = type;
+                    typeSelect.appendChild(option);
+                });
+                typeSelect.parentElement.style.display = "block";
 
-            // Clear and hide all other components
-            document.getElementById('flavor-container').style.display = 'none';
-            document.getElementById('extract-container').style.display = 'none';
+                if (category === "Hair Care") {
+                    extractContainer.style.display = "block";
+                } else if (category === "Skin Care") {
+                    flavorContainer.style.display = "block";
+                }
+            } else {
+                typeSelect.parentElement.style.display = "none";
+            }
+        });
 
-            // Show category-specific components
-            if (category === 'Hair Care') {
-                // Show Extract and populate Type with hair care options
-                document.getElementById('extract-container').style.display = 'block';
-                typeSelect.innerHTML += `
-                <option class="option_" value="Shampoo">Shampoo</option>
-                <option class="option_" value="Conditioner">Conditioner</option>
-                <option class="option_" value="Serum">Serum</option>
-                <option class="option_" value="Mask">Mask</option>
-            `;
-
-                sizeSelect.innerHTML += `
-                <option class="option_" value="125ML">125ML</option>
-                <option class="option_" value="1000ML">1000ML</option>
-                <option class="option_" value="3780ML">3780ML</option>
-                <option class="option_" value="4500ML">4500ML</option>
-            `;
-            } else if (category === 'Skin Care') {
-                // Show Scent and populate Type with skin care options
-                document.getElementById('flavor-container').style.display = 'block';
-                typeSelect.innerHTML += `
-                <option class="option_" value="Lotion">Lotion</option>
-                <option class="option_" value="Shower gel">Shower gel</option>
-                <option class="option_" value="Shower scrub">Shower scrub</option>
-                <option class="option_" value="Massage oil">Massage oil</option>
-            `;
-                sizeSelect.innerHTML += `
-                <option class="option_" value="125ML">125ML</option>
-                <option class="option_" value="1000ML">1000ML</option>
-                <option class="option_" value="3780ML">3780ML</option>
-                <option class="option_" value="4500ML">4500ML</option>
-            `;
+        // When the type is changed
+        typeSelect.addEventListener('change', function() {
+            const selectedType = this.value;
+            sizeSelect.innerHTML = '<option selected>Size</option>';
+            if (sizeOptions[selectedType]) {
+                sizeOptions[selectedType].forEach(size => {
+                    const option = document.createElement("option");
+                    option.value = size;
+                    option.textContent = size;
+                    sizeSelect.appendChild(option);
+                });
+                sizeSelect.parentElement.style.display = "block";
+            } else {
+                sizeSelect.parentElement.style.display = "none";
             }
         });
     </script>
+
 </body>
 
 </html>
