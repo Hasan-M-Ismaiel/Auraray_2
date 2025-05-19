@@ -281,7 +281,7 @@
     </script>
 
     <!--search dynamic select-->
-    <script>
+    <!-- <script>
         const typeSelect = document.getElementById('type');
         const sizeSelect = document.getElementById('size');
         const flavorContainer = document.getElementById('flavor-container');
@@ -358,7 +358,7 @@
                 sizeSelect.parentElement.style.display = "none";
             }
         });
-    </script>
+    </script> -->
 
 </body>
 
