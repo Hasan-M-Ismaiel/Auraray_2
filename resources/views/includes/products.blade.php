@@ -37,7 +37,7 @@
                 <div class="col-lg-2 col-md-4 col-sm-6">
                     <a href="{{ route('product', [$product->id]) }}" class="d-block text-center">
                         <div class="card border-0 shadow-sm">
-                            <img src="{{ asset($product->image) }}" alt="Skin Care Product" class="img-fluid" style="aspect-ratio: 1 / 1; object-fit: cover;">
+                            <img src="{{ asset($product->image) }}" alt="Skin Care Product" class="img-fluid" style="aspect-ratio: 1 / 1; object-fit: cover;" loading="lazy">
                         </div>
                     </a>
                 </div>
