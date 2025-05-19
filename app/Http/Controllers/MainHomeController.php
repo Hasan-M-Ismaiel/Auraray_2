@@ -11,14 +11,19 @@ class MainHomeController extends Controller
 
     public function home(Request $request)
     {
-        
-        $products = Product::inRandomOrder()->paginate(6); // Fetch products once
+
+        // $haircare_products = Product::inRandomOrder()->paginate(6); // Fetch products once
+        // $skincare_products = Product::inRandomOrder()->paginate(6); // Fetch products once
+
+        $haircare_products = Product::where('category', 'Hare Care')->inRandomOrder()->paginate(6);
+        $skincare_products = Product::where('category', 'Skin Care')->inRandomOrder()->paginate(6);
+
 
         if ($request->ajax()) {
             return view('includes.data', compact('products'));
         }
 
-        return view('main_home', compact('products'));
+        return view('main_home', compact('skincare_products', 'haircare_products'));
     }
 
     public function showProduct(Product $product)

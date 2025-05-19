@@ -7,7 +7,7 @@
             <h4>Auraray</h4>
             <p>{{$product->brief}}</p>
             <a href="{{ asset($product->image) }}" title="Auraray"
-                data-gallery="product-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                data-gallery="product-gallery-app" class="glightbox preview-link"></a>
             <a href="{{ route('product', [$product->id]) }}" title="More Details" class="details-link"><i
                     class="bi bi-link-45deg"></i></a>
         </div>
