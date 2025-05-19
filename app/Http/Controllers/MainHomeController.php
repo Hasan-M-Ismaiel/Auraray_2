@@ -15,7 +15,7 @@ class MainHomeController extends Controller
         // $haircare_products = Product::inRandomOrder()->paginate(6); // Fetch products once
         // $skincare_products = Product::inRandomOrder()->paginate(6); // Fetch products once
 
-        $haircare_products = Product::where('category', 'Hare Care')->inRandomOrder()->paginate(6);
+        $haircare_products = Product::where('category', 'Hair Care')->inRandomOrder()->paginate(6);
         $skincare_products = Product::where('category', 'Skin Care')->inRandomOrder()->paginate(6);
 
 
