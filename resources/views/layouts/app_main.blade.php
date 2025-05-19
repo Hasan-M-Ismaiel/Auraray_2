@@ -85,7 +85,7 @@
     <!--JQuery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         $(document).ready(function() {
 
             $(window).on('hashchange', function() {
@@ -278,7 +278,7 @@
                     });
             }
         });
-    </script>
+    </script> -->
 
     <!--search dynamic select-->
     <!-- <script>
