@@ -13,9 +13,10 @@
         <!-- Hair Care Products -->
         @if ($haircare_products->count())
         <div class="mb-5">
-            <div class="row gy-4 justify-content-center">
+            <h4 class="mb-4 text-center fw-bold border-bottom pb-2">Hair Care</h4>
+            <div class="row gx-3 gy-4 justify-content-center">
                 @foreach ($haircare_products as $product)
-                <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="col-lg-2 col-md-4 col-sm-6">
                     <a href="{{ route('product', [$product->id]) }}" class="d-block text-center">
                         <div class="card border-0 shadow-sm">
                             <img src="{{ asset($product->image) }}" alt="Hair Care Product" class="img-fluid" style="aspect-ratio: 1 / 1; object-fit: cover;">
@@ -30,9 +31,10 @@
         <!-- Skin Care Products -->
         @if ($skincare_products->count())
         <div>
-            <div class="row gy-4 justify-content-center">
+            <h4 class="mb-4 text-center fw-bold border-bottom pb-2">Skin Care</h4>
+            <div class="row gx-3 gy-4 justify-content-center">
                 @foreach ($skincare_products as $product)
-                <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="col-lg-2 col-md-4 col-sm-6">
                     <a href="{{ route('product', [$product->id]) }}" class="d-block text-center">
                         <div class="card border-0 shadow-sm">
                             <img src="{{ asset($product->image) }}" alt="Skin Care Product" class="img-fluid" style="aspect-ratio: 1 / 1; object-fit: cover;">
