@@ -18,11 +18,14 @@
                 @foreach ($haircare_products as $index => $product)
                 <div class="col-lg-2 col-md-4 col-sm-6 haircare-product {{ $index >= 6 ? 'd-none' : '' }}">
                     <a href="{{ route('product', [$product->id]) }}" class="d-block text-center">
-                        <div class="card border-0 shadow-sm">
-                            <img src="{{ asset($product->image) }}" alt="Hair Care Product" class="img-fluid" style="aspect-ratio: 1 / 1; object-fit: cover;" loading="lazy">
-                            <div style="text-align: left;" class="ms-2 mb-2">{{$product->type}}</div>
-                            <div style="text-align: left;" class="ms-2 mb-2">{{$product->flavor}}</div>
-                            <div style="text-align: left;" class="ms-2 mb-2">{{$product->size}}</div>
+                        <div class="card border-0 shadow-sm h-100">
+                            <img src="{{ asset($product->image) }}" alt="{{ $product->type }} Product" class="img-fluid" style="aspect-ratio: 1 / 1; object-fit: cover;" loading="lazy">
+
+                            <div class="p-3 text-start">
+                                <h6 class="fw-bold text-dark mb-1">{{ ucfirst($product->type) }}</h6>
+                                <p class="mb-0 text-muted small">{{ ucfirst($product->flavor) }}</p>
+                                <p class="mb-0 text-muted small">{{ strtoupper($product->size) }}</p>
+                            </div>
                         </div>
                     </a>
                 </div>
