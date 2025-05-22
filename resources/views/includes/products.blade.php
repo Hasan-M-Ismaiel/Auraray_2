@@ -41,8 +41,8 @@
         <div>
             <h4 class="mb-4 text-center fw-bold border-bottom pb-2">Skin Care</h4>
             <div class="row gx-3 gy-4 justify-content-center">
-                @foreach ($skincare_products as $product)
-                <div class="col-lg-2 col-md-4 col-sm-6">
+                @foreach ($skincare_products as $index => $product)
+                <div class="col-lg-2 col-md-4 col-sm-6 skincare-product {{ $index >= 6 ? 'd-none' : '' }}">
                     <a href="{{ route('product', [$product->id]) }}" class="d-block text-center">
                         <div class="card border-0 shadow-sm">
                             <img src="{{ asset($product->image) }}" alt="Skin Care Product" class="img-fluid" style="aspect-ratio: 1 / 1; object-fit: cover;" loading="lazy">
@@ -54,6 +54,11 @@
                 </div>
                 @endforeach
             </div>
+            @if ($skincare_products->count() > 6)
+            <div class="text-center mt-3">
+                <button class="btn btn-outline-primary" onclick="toggleProducts('skincare-product', this)">See More</button>
+            </div>
+            @endif
         </div>
         @endif
 
