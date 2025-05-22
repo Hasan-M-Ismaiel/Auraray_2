@@ -71,7 +71,8 @@
             <h4 class="mb-4 text-center fw-bold border-bottom pb-2">Skin Care</h4>
             <div class="row gx-3 gy-4 justify-content-center">
                 @foreach ($skincare_products as $index => $product)
-                <div class="col-lg-2 col-md-4 col-sm-6 skincare-product product-item {{ $index >= 6 ? 'd-none' : '' }}">
+                <div class="col-lg-2 col-md-4 col-sm-6 skincare-product product-item {{ $index < 6 ? 'show' : '' }}">
+
                     <a href="{{ route('product', [$product->id]) }}" class="d-block text-center">
                         <div class="card border-0 shadow-sm h-100">
                             <img src="{{ asset($product->image) }}" alt="{{ $product->type }} Product" class="img-fluid" style="aspect-ratio: 1 / 1; object-fit: cover;" loading="lazy">
@@ -114,9 +115,9 @@
         items.forEach((item, index) => {
             if (index >= 6) {
                 if (isExpanded) {
-                    item.classList.remove('show'); // Hide smoothly
+                    item.classList.remove('show');
                 } else {
-                    item.classList.add('show'); // Show smoothly
+                    item.classList.add('show');
                 }
             }
         });
