@@ -12,13 +12,16 @@ class MainHomeController extends Controller
     public function home(Request $request)
     {
 
+        $haircare_order = ['Shampoo', 'Conditioner', 'Serum', 'Mask'];
+        $skincare_order = ['Lotion', 'Shower Gel', 'Shower Scrub', 'Massage Oil'];
+
         $haircare_products = Product::where('category', 'Hair Care')
-            ->orderBy('type')
+            ->orderByRaw("FIELD(type, '" . implode("','", $haircare_order) . "')")
             ->orderBy('size')
             ->get();
 
         $skincare_products = Product::where('category', 'Skin Care')
-            ->orderBy('type')
+            ->orderByRaw("FIELD(type, '" . implode("','", $skincare_order) . "')")
             ->orderBy('size')
             ->get();
 
