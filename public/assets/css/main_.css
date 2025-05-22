@@ -1443,10 +1443,21 @@ section,
   }
 }
 
+/* Hide with max-height 0 and opacity 0 */
 .product .product-item {
   position: relative;
   overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
 }
+
+/* Show with max-height large enough to fit content and opacity 1 */
+.product-item.show {
+  max-height: 500px; /* Adjust max-height to be enough for your content */
+  opacity: 1;
+}
+
 
 .product .product-item .product-info {
   opacity: 0;

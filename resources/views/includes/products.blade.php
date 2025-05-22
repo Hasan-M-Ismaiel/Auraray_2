@@ -1,3 +1,24 @@
+<!-- this is for a see more button -->
+<style>
+    .custom-toggle-btn {
+        color: #fff;
+        background-color: #212529;
+        border: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .custom-toggle-btn:hover {
+        background-color: #343a40;
+        /* A slightly lighter dark shade for hover */
+    }
+
+    .custom-toggle-btn:focus {
+        box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.25);
+    }
+</style>
+
+
+
 <!-- product Section -->
 <section id="product" class="product section">
 
@@ -16,7 +37,7 @@
             <h4 class="mb-4 text-center fw-bold border-bottom pb-2">Hair Care</h4>
             <div class="row gx-3 gy-4 justify-content-center">
                 @foreach ($haircare_products as $index => $product)
-                <div class="col-lg-2 col-md-4 col-sm-6 haircare-product {{ $index >= 6 ? 'd-none' : '' }}">
+                <div class="col-lg-2 col-md-4 col-sm-6 haircare-product product-item {{ $index >= 6 ? '' : 'show' }}">
                     <a href="{{ route('product', [$product->id]) }}" class="d-block text-center">
                         <div class="card border-0 shadow-sm h-100">
                             <img src="{{ asset($product->image) }}" alt="{{ $product->type }} Product" class="img-fluid" style="aspect-ratio: 1 / 1; object-fit: cover;" loading="lazy">
@@ -34,8 +55,7 @@
             @if ($haircare_products->count() > 6)
             <div class="text-center mt-3">
                 <button
-                    class="btn btn-link text-decoration-none fw-medium"
-                    style="color: #212529;"
+                    class="btn custom-toggle-btn px-4 py-2 fw-medium"
                     onclick="toggleProducts('haircare-product', this)">
                     See More
                 </button>
@@ -51,7 +71,7 @@
             <h4 class="mb-4 text-center fw-bold border-bottom pb-2">Skin Care</h4>
             <div class="row gx-3 gy-4 justify-content-center">
                 @foreach ($skincare_products as $index => $product)
-                <div class="col-lg-2 col-md-4 col-sm-6 skincare-product {{ $index >= 6 ? 'd-none' : '' }}">
+                <div class="col-lg-2 col-md-4 col-sm-6 skincare-product product-item {{ $index >= 6 ? 'd-none' : '' }}">
                     <a href="{{ route('product', [$product->id]) }}" class="d-block text-center">
                         <div class="card border-0 shadow-sm h-100">
                             <img src="{{ asset($product->image) }}" alt="{{ $product->type }} Product" class="img-fluid" style="aspect-ratio: 1 / 1; object-fit: cover;" loading="lazy">
@@ -69,8 +89,7 @@
             @if ($skincare_products->count() > 6)
             <div class="text-center mt-3">
                 <button
-                    class="btn btn-link text-decoration-none fw-medium"
-                    style="color: #212529;"
+                    class="btn custom-toggle-btn px-4 py-2 fw-medium"
                     onclick="toggleProducts('skincare-product', this)">
                     See More
                 </button>
@@ -89,12 +108,16 @@
 <!-- see more products -->
 <script>
     function toggleProducts(className, btn) {
-        const items = document.querySelectorAll('.' + className);
+        const items = document.querySelectorAll('.' + className + '.product-item');
         let isExpanded = btn.dataset.expanded === 'true';
 
         items.forEach((item, index) => {
             if (index >= 6) {
-                item.classList.toggle('d-none', isExpanded);
+                if (isExpanded) {
+                    item.classList.remove('show'); // Hide smoothly
+                } else {
+                    item.classList.add('show'); // Show smoothly
+                }
             }
         });
 
