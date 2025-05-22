@@ -12,12 +12,15 @@ class MainHomeController extends Controller
     public function home(Request $request)
     {
 
-        // $haircare_products = Product::inRandomOrder()->paginate(6); // Fetch products once
-        // $skincare_products = Product::inRandomOrder()->paginate(6); // Fetch products once
+        $haircare_products = Product::where('category', 'Hair Care')
+            ->orderBy('type')
+            ->orderBy('size')
+            ->get();
 
-        $haircare_products = Product::where('category', 'Hair Care')->inRandomOrder()->get();
-        $skincare_products = Product::where('category', 'Skin Care')->inRandomOrder()->get();
-
+        $skincare_products = Product::where('category', 'Skin Care')
+            ->orderBy('type')
+            ->orderBy('size')
+            ->get();
 
         if ($request->ajax()) {
             return view('includes.data', compact('products'));
