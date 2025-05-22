@@ -46,9 +46,6 @@
                     <a href="{{ route('product', [$product->id]) }}" class="d-block text-center">
                         <div class="card border-0 shadow-sm">
                             <img src="{{ asset($product->image) }}" alt="Skin Care Product" class="img-fluid" style="aspect-ratio: 1 / 1; object-fit: cover;" loading="lazy">
-                        </div>
-                        <div class="card border-0 shadow-sm">
-                            <img src="{{ asset($product->image) }}" alt="Hair Care Product" class="img-fluid" style="aspect-ratio: 1 / 1; object-fit: cover;" loading="lazy">
                             <div style="text-align: left;" class="ms-2 mb-2">{{$product->type}}</div>
                             <div style="text-align: left;" class="ms-2 mb-2">{{$product->flavor}}</div>
                             <div style="text-align: left;" class="ms-2 mb-2">{{$product->size}}</div>
