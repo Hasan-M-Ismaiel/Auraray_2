@@ -23,7 +23,7 @@
 
                             <div class="p-3 text-start">
                                 <h6 class="fw-bold text-dark mb-1">{{ ucfirst($product->type) }}</h6>
-                                <p class="mb-0 text-muted small">{{ ucfirst($product->flavor) }}</p>
+                                <p class="mb-0 text-muted small">{{ ucfirst($product->extract) }}</p>
                                 <p class="mb-0 text-muted small">{{ strtoupper($product->size) }}</p>
                             </div>
                         </div>
@@ -33,9 +33,15 @@
             </div>
             @if ($haircare_products->count() > 6)
             <div class="text-center mt-3">
-                <button class="btn btn-outline-primary" onclick="toggleProducts('haircare-product', this)">See More</button>
+                <button
+                    class="btn btn-link text-decoration-none fw-medium"
+                    style="color: #212529;"
+                    onclick="toggleProducts('haircare-product', this)">
+                    See More
+                </button>
             </div>
             @endif
+
         </div>
         @endif
 
@@ -47,11 +53,14 @@
                 @foreach ($skincare_products as $index => $product)
                 <div class="col-lg-2 col-md-4 col-sm-6 skincare-product {{ $index >= 6 ? 'd-none' : '' }}">
                     <a href="{{ route('product', [$product->id]) }}" class="d-block text-center">
-                        <div class="card border-0 shadow-sm">
-                            <img src="{{ asset($product->image) }}" alt="Skin Care Product" class="img-fluid" style="aspect-ratio: 1 / 1; object-fit: cover;" loading="lazy">
-                            <div style="text-align: left;" class="ms-2 mb-2">{{$product->type}}</div>
-                            <div style="text-align: left;" class="ms-2 mb-2">{{$product->flavor}}</div>
-                            <div style="text-align: left;" class="ms-2 mb-2">{{$product->size}}</div>
+                        <div class="card border-0 shadow-sm h-100">
+                            <img src="{{ asset($product->image) }}" alt="{{ $product->type }} Product" class="img-fluid" style="aspect-ratio: 1 / 1; object-fit: cover;" loading="lazy">
+
+                            <div class="p-3 text-start">
+                                <h6 class="fw-bold text-dark mb-1">{{ ucfirst($product->type) }}</h6>
+                                <p class="mb-0 text-muted small">{{ ucfirst($product->flavor) }}</p>
+                                <p class="mb-0 text-muted small">{{ strtoupper($product->size) }}</p>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -59,9 +68,16 @@
             </div>
             @if ($skincare_products->count() > 6)
             <div class="text-center mt-3">
-                <button class="btn btn-outline-primary" onclick="toggleProducts('skincare-product', this)">See More</button>
+                <button
+                    class="btn btn-link text-decoration-none fw-medium"
+                    style="color: #212529;"
+                    onclick="toggleProducts('skincare-product', this)">
+                    See More
+                </button>
             </div>
             @endif
+
+
         </div>
         @endif
 
