@@ -8,8 +8,7 @@
     }
 
     .custom-toggle-btn:hover {
-        background-color: #343a40;
-        /* A slightly lighter dark shade for hover */
+        background-color: #343a40; /* A slightly lighter dark shade for hover */
     }
 
     .custom-toggle-btn:focus {
@@ -37,7 +36,7 @@
             <h4 class="mb-4 text-center fw-bold border-bottom pb-2">Hair Care</h4>
             <div class="row gx-3 gy-4 justify-content-center">
                 @foreach ($haircare_products as $index => $product)
-                <div class="col-lg-2 col-md-4 col-sm-6 haircare-product product-item {{ $index < 6 ? 'show' : '' }}">
+                <div class="col-lg-2 col-md-4 col-sm-6 haircare-product {{ $index >= 6 ? 'd-none' : '' }}">
                     <a href="{{ route('product', [$product->id]) }}" class="d-block text-center">
                         <div class="card border-0 shadow-sm h-100">
                             <img src="{{ asset($product->image) }}" alt="{{ $product->type }} Product" class="img-fluid" style="aspect-ratio: 1 / 1; object-fit: cover;" loading="lazy">
@@ -71,8 +70,7 @@
             <h4 class="mb-4 text-center fw-bold border-bottom pb-2">Skin Care</h4>
             <div class="row gx-3 gy-4 justify-content-center">
                 @foreach ($skincare_products as $index => $product)
-                <div class="col-lg-2 col-md-4 col-sm-6 skincare-product product-item {{ $index < 6 ? 'show' : '' }}">
-
+                <div class="col-lg-2 col-md-4 col-sm-6 skincare-product {{ $index >= 6 ? 'd-none' : '' }}">
                     <a href="{{ route('product', [$product->id]) }}" class="d-block text-center">
                         <div class="card border-0 shadow-sm h-100">
                             <img src="{{ asset($product->image) }}" alt="{{ $product->type }} Product" class="img-fluid" style="aspect-ratio: 1 / 1; object-fit: cover;" loading="lazy">
@@ -109,16 +107,12 @@
 <!-- see more products -->
 <script>
     function toggleProducts(className, btn) {
-        const items = document.querySelectorAll('.' + className + '.product-item');
+        const items = document.querySelectorAll('.' + className);
         let isExpanded = btn.dataset.expanded === 'true';
 
         items.forEach((item, index) => {
             if (index >= 6) {
-                if (isExpanded) {
-                    item.classList.remove('show');
-                } else {
-                    item.classList.add('show');
-                }
+                item.classList.toggle('d-none', isExpanded);
             }
         });
 
