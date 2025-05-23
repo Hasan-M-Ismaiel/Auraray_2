@@ -8,7 +8,8 @@
     }
 
     .custom-toggle-btn:hover {
-        background-color: #343a40; /* A slightly lighter dark shade for hover */
+        background-color: #343a40;
+        /* A slightly lighter dark shade for hover */
     }
 
     .custom-toggle-btn:focus {
@@ -117,6 +118,14 @@
         });
 
         btn.textContent = isExpanded ? 'See More' : 'See Less';
-        btn.dataset.expanded = !isExpanded;
+        btn.dataset.expanded = (!isExpanded).toString();
+
+        // Scroll back to button position after collapsing
+        if (isExpanded) {
+            btn.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        }
     }
 </script>
