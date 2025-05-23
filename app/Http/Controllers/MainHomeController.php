@@ -13,7 +13,7 @@ class MainHomeController extends Controller
     {
 
         $haircare_order = ['Shampoo', 'Conditioner', 'Serum', 'Mask'];
-        $skincare_order = ['Lotion', 'Shower Gel', 'Shower Scrub', 'Massage Oil'];
+        $skincare_order = ['Lotion', 'Shower Gel', 'Shower Scrub', 'Massage Oil', 'Moroccan Soap'];
 
         $haircare_products = Product::where('category', 'Hair Care')
             ->orderByRaw("FIELD(type, '" . implode("','", $haircare_order) . "')")
