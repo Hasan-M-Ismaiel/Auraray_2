@@ -31,7 +31,7 @@
         </div>
 
         <!-- Subcategory Selector (for Auraray) -->
-        <div class="row justify-content-center mb-4" x-show="selectedBrand === 'auraray'">
+        <div id="subcategory-section" class="row justify-content-center mb-4" x-show="selectedBrand === 'auraray'">
             <div class="col-md-4">
                 <div @click="selectedCategory = 'haircare'"
                     :class="selectedCategory === 'haircare' ? 'bg-success text-white' : 'bg-light text-dark border'"
@@ -82,8 +82,12 @@
                 <button
                     class="btn custom-toggle-btn px-4 py-2 fw-medium"
                     x-text="haircareExpanded ? 'See Less' : 'See More'"
-                    @click="haircareExpanded = !haircareExpanded">
+                    @click="
+      haircareExpanded = !haircareExpanded;
+      if (!haircareExpanded) document.getElementById('subcategory-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    ">
                 </button>
+
             </div>
             @endif
             @endif
@@ -119,7 +123,10 @@
                 <button
                     class="btn custom-toggle-btn px-4 py-2 fw-medium"
                     x-text="skincareExpanded ? 'See Less' : 'See More'"
-                    @click="skincareExpanded = !skincareExpanded">
+                    @click="
+      skincareExpanded = !skincareExpanded;
+      if (!skincareExpanded) document.getElementById('subcategory-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    ">
                 </button>
             </div>
             @endif
