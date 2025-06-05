@@ -1,49 +1,6 @@
-<style>
-    .bg-accent {
-        background-color: #ffc451 !important;
-        color: #fff !important;
-    }
-
-    .bg-accent:hover {
-        background-color: #e6b744 !important;
-        /* slightly darker on hover */
-    }
-
-    .brand-card {
-        cursor: pointer;
-        transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-        height: 100%;
-    }
-
-    .brand-card:hover {
-        background-color: #ffc451 !important;
-        color: #000 !important;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    .brand-card.selected {
-        background-color: #212529 !important;
-        color: #fff !important;
-    }
-
-    .brand-card.selected .brand-description {
-        color: #dddddd !important;
-    }
-
-    .brand-description {
-        font-size: 0.85rem;
-        color: #6c757d;
-        /* default muted color */
-    }
-</style>
 
 <!-- Brands Section with Toggle -->
-<section id="brand" class="product section" x-data="{
-    selectedBrand: 'auraray',
-    selectedCategory: null,
-    haircareExpanded: false,
-    skincareExpanded: false
-}">
+<section id="brand" class="product section">
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Brands</h2>
@@ -53,51 +10,10 @@
     <div class="container" data-aos="fade-up" data-aos-delay="200">
         <!-- Brand Selection -->
         <div class="row justify-content-center mb-4">
-            <!-- Auraray Card -->
-            <div class="col-md-4 d-flex">
-                <div
-                    @click="selectedBrand = 'auraray'; selectedCategory = null"
-                    :class="selectedBrand === 'auraray' ? 'brand-card selected' : 'brand-card bg-light text-dark border'"
-                    class="p-4 text-center fw-bold rounded shadow-sm w-100">
-                    Auraray
-                    <p class="mt-2 mb-0 fw-normal fst-italic text-muted brand-description">
-                        AuraRay is the preferred choice of salon professionals and retailers worldwide, offering a comprehensive collection of high-performance solutions across haircare, shaving, grooming, and skincare.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Beauty & Vitamins Card -->
-            <div class="col-md-4 d-flex">
-                <div
-                    @click="selectedBrand = 'beauty'; selectedCategory = null"
-                    :class="selectedBrand === 'beauty' ? 'brand-card selected' : 'brand-card bg-light text-dark border'"
-                    class="p-4 text-center fw-bold rounded shadow-sm w-100">
-                    Beauty & Vitamins
-                    <p class="mt-2 mb-0 fw-normal fst-italic text-muted brand-description">
-                        Beauty & Vitamins brings salon-quality beauty care into everyday routines with simple, effective, and easy-to-use formulations.
-                    </p>
-                </div>
-            </div>
+            
         </div>
 
 
-        <!-- Subcategory Selector (for Auraray) -->
-        <div id="subcategory-section" class="row justify-content-center mb-4" x-show="selectedBrand === 'auraray'">
-            <div class="col-md-4">
-                <div @click="selectedCategory = 'haircare'"
-                    :class="selectedCategory === 'haircare' ? 'bg-accent' : 'bg-light text-dark border'"
-                    class="p-3 text-center fw-medium rounded shadow-sm cursor-pointer">
-                    Hair Care
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div @click="selectedCategory = 'skincare'"
-                    :class="selectedCategory === 'skincare' ? 'bg-accent' : 'bg-light text-dark border'"
-                    class="p-3 text-center fw-medium rounded shadow-sm cursor-pointer">
-                    Skin Care
-                </div>
-            </div>
-        </div>
 
         <!-- Coming Soon Message -->
         <div x-show="selectedBrand === 'beauty'" class="text-center py-5">
@@ -128,19 +44,6 @@
                 @endforeach
             </div>
 
-            @if ($haircare_products->count() > 6)
-            <div class="text-center mt-3">
-                <button
-                    class="btn custom-toggle-btn px-4 py-2 fw-medium"
-                    x-text="haircareExpanded ? 'See Less' : 'See More'"
-                    @click="
-      haircareExpanded = !haircareExpanded;
-      if (!haircareExpanded) document.getElementById('subcategory-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
-    ">
-                </button>
-
-            </div>
-            @endif
             @endif
         </div>
 

@@ -23,9 +23,6 @@
                     <br><br>
                     Backed by global ISO certifications, every product we create meets the highest standards of quality, safety, and reliability. With our dedicated 24/7 customer support, we’re here to guide and support your brand every step of the way — from initial concept to final creation.
                 </p>
-                <p>
-                    <a href="#" class="btn btn-get-started">Get Started</a>
-                </p>
             </div>
             <div class="col-md-6 col-lg-6 ps-lg-5">
                 <div class="row">

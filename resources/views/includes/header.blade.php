@@ -11,7 +11,36 @@
                 <li><a href="{{ route('home') }}" class="active">Home<br></a></li>
                 <li><a href="{{ route('home') }}#about">About Us</a></li>
                 <li><a href="{{ route('home') }}#product ">Products</a></li>
-                <li><a href="{{ route('home') }}#brand ">Brands</a></li>
+                <li class="dropdown"><a href="#"><span>Brands</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                        <li class="dropdown"><a href="#"><span>Auraray</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                            <ul>
+                                <li class="dropdown"><a href="#"><span>Hair care</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                                    <ul>
+                                        <li><a href="{{ route('products.shampoo') }}">Shampoo</a></li>
+                                        <li><a href="#">Conditioner</a></li>
+                                        <li><a href="#">Serum</a></li>
+                                        <li><a href="#">Mask</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#"><span>Skin care</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                                    <ul>
+                                        <li><a href="#">Lotion</a></li>
+                                        <li><a href="#">Shower gel</a></li>
+                                        <li><a href="#">Shower scrub</a></li>
+                                        <li><a href="#">Massage oil</a></li>
+                                        <li><a href="#">Moroccan Soap</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#"><span>Beauty & Vitamins</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                            <ul>
+                                <li><a href="#">Comming Soon .... </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
                 <li><a href="{{ route('home') }}#services-2">Services</a></li>
                 <li><a href="{{ route('home') }}#tabs">Quality</a></li>
                 <li><a href="{{ route('home') }}#contact ">Contact Us</a></li>
