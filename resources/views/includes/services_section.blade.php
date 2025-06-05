@@ -15,7 +15,7 @@
             <div class="col-md-6 col-lg-4">
                 <span class="content-subtitle">Our Services</span>
                 <h2 class="content-title">
-                    AuraRay – Premium Beauty & Grooming Solutions
+                    Premium Beauty & Grooming Solutions
                 </h2>
                 <p class="mb-5">
                     At Al Enayah Al Kamlah, we specialize in delivering high-quality beauty and grooming solutions tailored for salons, professionals, and beauty brands worldwide.<br><br>

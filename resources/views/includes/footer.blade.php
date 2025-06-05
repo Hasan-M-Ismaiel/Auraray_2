@@ -83,7 +83,7 @@
         </div>
 
         <div class="copyright d-flex flex-column flex-md-row align-items-center justify-content-md-between">
-            <p>© <span>Copyright</span> <strong class="px-1 sitename">AuraRay</strong> <span>All Rights Reserved</span></p>
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">Al Enayah Al Kamlah</strong> <span>All Rights Reserved</span></p>
             <div class="credits">
                 Made with love UAE-2025
             </div>

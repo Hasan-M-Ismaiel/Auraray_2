@@ -59,10 +59,7 @@
           At Al Enayah Al Kamlah, we are proud to be a trusted leader in crafting and supplying top-tier cosmetic tools and professional-grade beauty products. With decades of experience in the beauty industry, we proudly serve salons, spas, and global retailers by delivering an extensive range of premium solutions thoughtfully designed to meet the unique needs of both beauty professionals and consumers.
           <br><br>
           Our portfolio includes salon-focused hair care, skincare, shaving, and grooming essentials — all expertly formulated with effective ingredients, luxurious textures, and captivating fragrance profiles.
-          <br><br>
-          Beyond our signature brands, we also specialize in private label manufacturing, partnering with clients to bring their unique beauty visions to life through custom product development and bespoke packaging solutions.
-          <br><br>
-          Committed to uncompromising quality and safety, our operations proudly hold international ISO certifications. Our dedicated customer support team is available 24/7, ensuring seamless assistance at every step of your journey. From inspired innovation to flawless execution, Al Enayah Al Kamlah empowers beauty businesses worldwide with reliable, sophisticated, and performance-driven cosmetic solutions.
+
 
         </p>
 
@@ -92,21 +89,12 @@
           <div class="px-3">
             <span class="content-subtitle">Our Product</span>
             <h2 class="content-title text-start">
-              Auraray
+              More ...
             </h2>
             <p class="fst-italic text">
-              <span style="color: #ffc451;">AuraRay </span> is our exclusive beauty brand, designed to offer a luxurious line of premium products:
-            </p>
-            <ul>
-              <li><i class="bi bi-check2-all"></i> <span>Hair care.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Shaving and grooming.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Skin care.</span></li>
-            </ul>
-            <p class="lead">
-              Created with a focus on the specific needs of beauty salons.
-            </p>
-            <p class="mb-5">
-              From nourishing shampoos and conditioners to rejuvenating skincare treatments, AuraRay’s carefully crafted products help salon professionals deliver outstanding results.
+              Beyond our signature brands, we also specialize in private label manufacturing, partnering with clients to bring their unique beauty visions to life through custom product development and bespoke packaging solutions.
+              <br><br>
+              Committed to uncompromising quality and safety, our operations proudly hold international ISO certifications. Our dedicated customer support team is available 24/7, ensuring seamless assistance at every step of your journey. From inspired innovation to flawless execution, Al Enayah Al Kamlah empowers beauty businesses worldwide with reliable, sophisticated, and performance-driven cosmetic solutions.
             </p>
             <p>
               <a href="#contact" class="btn-get-started">Contact us</a>

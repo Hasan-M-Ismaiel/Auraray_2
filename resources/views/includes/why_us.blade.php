@@ -13,7 +13,7 @@
 
       <div class="col-lg-4 ps-lg-5">
         <span class="content-subtitle">Why Us</span>
-        <h2 class="content-title">AuraRay is the go-to brand for salon
+        <h2 class="content-title">Best selection for salon
           professionals, offering a comprehensive range of solutions for: </h2>
         <p class="lead">
           haircare
@@ -22,7 +22,7 @@
         </p>
         <p class="mb-5">
           Trusted by experts and loved by
-          consumers, AuraRay combines luxury
+          consumers, it combines luxury
           with functionality to elevate
           everyday beauty rituals.
         </p>
