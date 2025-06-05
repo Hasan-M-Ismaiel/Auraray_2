@@ -1,7 +1,9 @@
 <!-- Brands Section with Toggle -->
 <section id="brand" class="product section" x-data="{
     selectedBrand: 'auraray',
-    selectedCategory: null
+    selectedCategory: null,
+    haircareExpanded: false,
+    skincareExpanded: false
 }">
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
@@ -57,31 +59,36 @@
             <h4 class="mb-4 text-center fw-bold border-bottom pb-2">Hair Care</h4>
             <div class="row gx-3 gy-4 justify-content-center">
                 @foreach ($haircare_products as $index => $product)
-                <div class="col-lg-2 col-md-4 col-sm-6 haircare-product {{ $index >= 6 ? 'd-none' : '' }}">
-                    <a href="{{ route('product', [$product->id]) }}" class="d-block text-center">
-                        <div class="card border-0 shadow-sm h-100">
-                            <img src="{{ asset($product->image) }}" alt="{{ $product->type }} Product"
-                                class="img-fluid" style="aspect-ratio: 1 / 1; object-fit: cover;" loading="lazy">
-                            <div class="p-3 text-start">
-                                <h6 class="fw-bold text-dark mb-1">{{ ucfirst($product->type) }}</h6>
-                                <p class="mb-0 text-muted small">{{ ucfirst($product->extract) }}</p>
-                                <p class="mb-0 text-muted small">{{ strtoupper($product->size) }}</p>
+                <template x-if="haircareExpanded || {{ $index }} < 6">
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <a href="{{ route('product', [$product->id]) }}" class="d-block text-center">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="{{ asset($product->image) }}" alt="{{ $product->type }} Product"
+                                    class="img-fluid" style="aspect-ratio: 1 / 1; object-fit: cover;" loading="lazy">
+                                <div class="p-3 text-start">
+                                    <h6 class="fw-bold text-dark mb-1">{{ ucfirst($product->type) }}</h6>
+                                    <p class="mb-0 text-muted small">{{ ucfirst($product->extract) }}</p>
+                                    <p class="mb-0 text-muted small">{{ strtoupper($product->size) }}</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                </template>
                 @endforeach
             </div>
+
             @if ($haircare_products->count() > 6)
             <div class="text-center mt-3">
-                <button class="btn custom-toggle-btn px-4 py-2 fw-medium"
-                    onclick="toggleProducts('haircare-product', this)">
-                    See More
+                <button
+                    class="btn custom-toggle-btn px-4 py-2 fw-medium"
+                    x-text="haircareExpanded ? 'See Less' : 'See More'"
+                    @click="haircareExpanded = !haircareExpanded">
                 </button>
             </div>
             @endif
             @endif
         </div>
+
 
         <!-- Skin Care Products -->
         <div x-show="selectedCategory === 'skincare'">
@@ -89,30 +96,35 @@
             <h4 class="mb-4 text-center fw-bold border-bottom pb-2">Skin Care</h4>
             <div class="row gx-3 gy-4 justify-content-center">
                 @foreach ($skincare_products as $index => $product)
-                <div class="col-lg-2 col-md-4 col-sm-6 skincare-product {{ $index >= 6 ? 'd-none' : '' }}">
-                    <a href="{{ route('product', [$product->id]) }}" class="d-block text-center">
-                        <div class="card border-0 shadow-sm h-100">
-                            <img src="{{ asset($product->image) }}" alt="{{ $product->type }} Product"
-                                class="img-fluid" style="aspect-ratio: 1 / 1; object-fit: cover;" loading="lazy">
-                            <div class="p-3 text-start">
-                                <h6 class="fw-bold text-dark mb-1">{{ ucfirst($product->type) }}</h6>
-                                <p class="mb-0 text-muted small">{{ ucfirst($product->flavor) }}</p>
-                                <p class="mb-0 text-muted small">{{ strtoupper($product->size) }}</p>
+                <template x-if="skincareExpanded || {{ $index }} < 6">
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <a href="{{ route('product', [$product->id]) }}" class="d-block text-center">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="{{ asset($product->image) }}" alt="{{ $product->type }} Product"
+                                    class="img-fluid" style="aspect-ratio: 1 / 1; object-fit: cover;" loading="lazy">
+                                <div class="p-3 text-start">
+                                    <h6 class="fw-bold text-dark mb-1">{{ ucfirst($product->type) }}</h6>
+                                    <p class="mb-0 text-muted small">{{ ucfirst($product->flavor) }}</p>
+                                    <p class="mb-0 text-muted small">{{ strtoupper($product->size) }}</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                </template>
                 @endforeach
             </div>
+
             @if ($skincare_products->count() > 6)
             <div class="text-center mt-3">
-                <button class="btn custom-toggle-btn px-4 py-2 fw-medium"
-                    onclick="toggleProducts('skincare-product', this)">
-                    See More
+                <button
+                    class="btn custom-toggle-btn px-4 py-2 fw-medium"
+                    x-text="skincareExpanded ? 'See Less' : 'See More'"
+                    @click="skincareExpanded = !skincareExpanded">
                 </button>
             </div>
             @endif
             @endif
         </div>
+
     </div>
 </section>
