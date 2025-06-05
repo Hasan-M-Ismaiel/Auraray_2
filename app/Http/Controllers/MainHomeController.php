@@ -12,22 +12,22 @@ class MainHomeController extends Controller
     public function home(Request $request)
     {
 
-        $haircare_order = ['Shampoo', 'Conditioner', 'Serum', 'Mask'];
-        $skincare_order = ['Lotion', 'Shower Gel', 'Shower Scrub', 'Massage Oil', 'Moroccan Soap'];
+        // $haircare_order = ['Shampoo', 'Conditioner', 'Serum', 'Mask'];
+        // $skincare_order = ['Lotion', 'Shower Gel', 'Shower Scrub', 'Massage Oil', 'Moroccan Soap'];
 
-        $haircare_products = Product::where('category', 'Hair Care')
-            ->orderByRaw("FIELD(type, '" . implode("','", $haircare_order) . "')")
-            ->orderBy('size')
-            ->get();
+        // $haircare_products = Product::where('category', 'Hair Care')
+        //     ->orderByRaw("FIELD(type, '" . implode("','", $haircare_order) . "')")
+        //     ->orderBy('size')
+        //     ->get();
 
-        $skincare_products = Product::where('category', 'Skin Care')
-            ->orderByRaw("FIELD(type, '" . implode("','", $skincare_order) . "')")
-            ->orderBy('size')
-            ->get();
+        // $skincare_products = Product::where('category', 'Skin Care')
+        //     ->orderByRaw("FIELD(type, '" . implode("','", $skincare_order) . "')")
+        //     ->orderBy('size')
+        //     ->get();
 
-        if ($request->ajax()) {
-            return view('includes.data', compact('products'));
-        }
+        // if ($request->ajax()) {
+        //     return view('includes.data', compact('products'));
+        // }
 
         // return view('main_home', compact('skincare_products', 'haircare_products'));
         return view('main_home');

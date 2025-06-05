@@ -21,11 +21,9 @@
 <!-- End products Area -->
 
 <!-- Start products Area -->
-@include('includes.arrow')
 <!-- End products Area -->
 
 <!-- Start brands Area -->
-@include('includes.brands')
 <!-- End brands Area -->
 
 <!-- Start services Area -->
