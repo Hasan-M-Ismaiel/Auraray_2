@@ -32,6 +32,9 @@
     <!-- Main CSS File -->
     <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
 
+    <!-- alpinejs -->
+    <script src="//unpkg.com/alpinejs" defer></script>
+
 
 </head>
 
