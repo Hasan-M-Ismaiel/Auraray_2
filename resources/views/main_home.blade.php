@@ -20,6 +20,10 @@
 @include('includes.products')
 <!-- End products Area -->
 
+<!-- Start brands Area -->
+@include('includes.brands')
+<!-- End brands Area -->
+
 <!-- Start services Area -->
 @include('includes.services_section')
 <!-- End services Area -->

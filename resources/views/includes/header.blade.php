@@ -11,6 +11,7 @@
                 <li><a href="{{ route('home') }}" class="active">Home<br></a></li>
                 <li><a href="{{ route('home') }}#about">About Us</a></li>
                 <li><a href="{{ route('home') }}#product ">Products</a></li>
+                <li><a href="{{ route('home') }}#brand ">Brands</a></li>
                 <li><a href="{{ route('home') }}#services-2">Services</a></li>
                 <li><a href="{{ route('home') }}#tabs">Quality</a></li>
                 <li><a href="{{ route('home') }}#contact ">Contact Us</a></li>

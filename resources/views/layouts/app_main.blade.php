@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Auraray</title>
+    <title>Al Enayah Al Kamlah</title>
     <meta name="description" content="AuraRay by Al Enayah Al Kamlah: Premium cosmetic products for hair salons. Offering professional-grade hair care, shaving & grooming, and skin care essentials.">
     <meta name="keywords" content="AuraRay, Al Enayah Al Kamlah, hair salon products, premium cosmetics, professional hair care, shaving gel, skin care products, shampoo, conditioner, hair gel, face scrub, body lotion, body wash, shower gel, oil massage, salon supplies, private label cosmetics, contract manufacturing, salon-grade products">
     <meta name="author" content="Al Enayah Al Kamlah Manufacture of Cosmetic Tools & Supply L.L.C.">

@@ -50,8 +50,6 @@ class MainHomeController extends Controller
             }
         }
 
-        Log::info($inputs);
-
         // Build the query dynamically
         $query = Product::query();
 
