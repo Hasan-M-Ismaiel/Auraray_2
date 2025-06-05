@@ -8,6 +8,33 @@
         background-color: #e6b744 !important;
         /* slightly darker on hover */
     }
+
+    .brand-card {
+        cursor: pointer;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+        height: 100%;
+    }
+
+    .brand-card:hover {
+        background-color: #ffc451 !important;
+        color: #000 !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .brand-card.selected {
+        background-color: #212529 !important;
+        color: #fff !important;
+    }
+
+    .brand-card.selected .brand-description {
+        color: #dddddd !important;
+    }
+
+    .brand-description {
+        font-size: 0.85rem;
+        color: #6c757d;
+        /* default muted color */
+    }
 </style>
 
 <!-- Brands Section with Toggle -->
@@ -26,21 +53,33 @@
     <div class="container" data-aos="fade-up" data-aos-delay="200">
         <!-- Brand Selection -->
         <div class="row justify-content-center mb-4">
-            <div class="col-md-4">
-                <div @click="selectedBrand = 'auraray'; selectedCategory = null"
-                    :class="selectedBrand === 'auraray' ? 'bg-dark text-white' : 'bg-light text-dark border'"
-                    class="p-4 text-center fw-bold rounded shadow-sm cursor-pointer">
+            <!-- Auraray Card -->
+            <div class="col-md-4 d-flex">
+                <div
+                    @click="selectedBrand = 'auraray'; selectedCategory = null"
+                    :class="selectedBrand === 'auraray' ? 'brand-card selected' : 'brand-card bg-light text-dark border'"
+                    class="p-4 text-center fw-bold rounded shadow-sm w-100">
                     Auraray
+                    <p class="mt-2 mb-0 fw-normal fst-italic text-muted brand-description">
+                        AuraRay is the preferred choice of salon professionals and retailers worldwide, offering a comprehensive collection of high-performance solutions across haircare, shaving, grooming, and skincare.
+                    </p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div @click="selectedBrand = 'beauty'; selectedCategory = null"
-                    :class="selectedBrand === 'beauty' ? 'bg-dark text-white' : 'bg-light text-dark border'"
-                    class="p-4 text-center fw-bold rounded shadow-sm cursor-pointer">
+
+            <!-- Beauty & Vitamins Card -->
+            <div class="col-md-4 d-flex">
+                <div
+                    @click="selectedBrand = 'beauty'; selectedCategory = null"
+                    :class="selectedBrand === 'beauty' ? 'brand-card selected' : 'brand-card bg-light text-dark border'"
+                    class="p-4 text-center fw-bold rounded shadow-sm w-100">
                     Beauty & Vitamins
+                    <p class="mt-2 mb-0 fw-normal fst-italic text-muted brand-description">
+                        Beauty & Vitamins brings salon-quality beauty care into everyday routines with simple, effective, and easy-to-use formulations.
+                    </p>
                 </div>
             </div>
         </div>
+
 
         <!-- Subcategory Selector (for Auraray) -->
         <div id="subcategory-section" class="row justify-content-center mb-4" x-show="selectedBrand === 'auraray'">

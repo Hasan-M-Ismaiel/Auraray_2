@@ -1,3 +1,12 @@
+<style>
+    @media (min-width: 768px) {
+        .services-2 .row {
+            align-items: center;
+            /* Vertically center both columns */
+        }
+    }
+</style>
+
 <!-- Services 2 Section -->
 <section id="services-2" class="services-2 section">
 
@@ -8,11 +17,11 @@
                 <h2 class="content-title">
                     AuraRay – Premium Beauty & Grooming Solutions
                 </h2>
-                <p class="lead">
-                    AuraRay, a brand of Al Enayah Al Kamlah, offers high-quality hair care, skincare, and grooming products designed for salons and professionals.
-                </p>
                 <p class="mb-5">
-                    With customizable solutions, fragrant benefits, and 24/7 customer support, AuraRay ensures exceptional beauty care, backed by global ISO certifications for superior quality and safety.
+                    At Al Enayah Al Kamlah, we specialize in delivering high-quality beauty and grooming solutions tailored for salons, professionals, and beauty brands worldwide.<br><br>
+                    Our expertise spans the full spectrum of hair care, skincare, and grooming product development — blending outstanding performance with luxurious sensory experiences.<br><br> We offer fully customizable formulations, signature fragrances, and flexible packaging options to perfectly match the distinct needs of each client and partner.
+                    <br><br>
+                    Backed by global ISO certifications, every product we create meets the highest standards of quality, safety, and reliability. With our dedicated 24/7 customer support, we’re here to guide and support your brand every step of the way — from initial concept to final creation.
                 </p>
                 <p>
                     <a href="#" class="btn btn-get-started">Get Started</a>
