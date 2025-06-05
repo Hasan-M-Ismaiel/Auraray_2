@@ -44,7 +44,7 @@
                                     class="img-fluid" style="aspect-ratio: 1 / 1; object-fit: cover;" loading="lazy">
                                 <div class="p-3 text-start">
                                     <!-- <h6 class="fw-bold text-dark mb-1">{{ ucfirst($product->type) }}</h6> -->
-                                    <p class="mb-0 text-muted small">{{ ucfirst($product->extract) }}</p>
+                                    <p class="mb-0 text-muted small">{{ ucfirst($product->flavor) }}</p>
                                     <p class="mb-0 text-muted small">{{ strtoupper($product->size) }}</p>
                                 </div>
                             </div>

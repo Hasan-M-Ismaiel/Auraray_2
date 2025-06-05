@@ -1,6 +1,6 @@
 <!-- Stats Section -->
 <section id="stats" class="stats section light-background">
-  <div class="container">
+  <div class="container mt-3">
     <div class="row gy-4 justify-content-center">
       <div class="col-lg-5">
         <div class="images-overlap img-wrap">

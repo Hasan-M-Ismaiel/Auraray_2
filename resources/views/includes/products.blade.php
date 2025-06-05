@@ -25,7 +25,7 @@
 
 
 <!-- product Section -->
-<section id="product" class="product section">
+<section id="product" class="product section light-background">
 
     <div class="row gy-4 justify-content-center">
         <div class="col-lg-4 ps-lg-5">
