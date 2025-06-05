@@ -23,7 +23,7 @@
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li class="current">Auraray</li>
                     <li class="current">Hair care</li>
-                    <li class="current">Shampoo</li>
+                    <li class="current">Mask</li>
                 </ol>
             </div>
         </nav>
@@ -34,7 +34,7 @@
 
         <div class="container">
             @if ($products->count())
-            <h4 class="mb-4 text-center fw-bold border-bottom pb-2">Shampoo</h4>
+            <h4 class="mb-4 text-center fw-bold border-bottom pb-2">Mask</h4>
             <div class="row gx-3 gy-4 justify-content-center">
                 @foreach ($products as $product)
                     <div class="col-lg-2 col-md-4 col-sm-6">

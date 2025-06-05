@@ -18,18 +18,18 @@
                                 <li class="dropdown"><a href="#"><span>Hair care</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                                     <ul>
                                         <li><a href="{{ route('products.shampoo') }}">Shampoo</a></li>
-                                        <li><a href="#">Conditioner</a></li>
-                                        <li><a href="#">Serum</a></li>
-                                        <li><a href="#">Mask</a></li>
+                                        <li><a href="{{ route('products.conditioner') }}">Conditioner</a></li>
+                                        <li><a href="{{ route('products.serum') }}">Serum</a></li>
+                                        <li><a href="{{ route('products.mask') }}">Mask</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown"><a href="#"><span>Skin care</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                                     <ul>
-                                        <li><a href="#">Lotion</a></li>
-                                        <li><a href="#">Shower gel</a></li>
-                                        <li><a href="#">Shower scrub</a></li>
-                                        <li><a href="#">Massage oil</a></li>
-                                        <li><a href="#">Moroccan Soap</a></li>
+                                        <li><a href="{{ route('products.lotion') }}">Lotion</a></li>
+                                        <li><a href="{{ route('products.shower_gel') }}">Shower gel</a></li>
+                                        <li><a href="{{ route('products.shower_scrub') }}">Shower scrub</a></li>
+                                        <li><a href="{{ route('products.message_oil') }}">Massage oil</a></li>
+                                        <li><a href="{{ route('products.moroccan_soap') }}">Moroccan Soap</a></li>
                                     </ul>
                                 </li>
                             </ul>

@@ -29,7 +29,8 @@ class MainHomeController extends Controller
             return view('includes.data', compact('products'));
         }
 
-        return view('main_home', compact('skincare_products', 'haircare_products'));
+        // return view('main_home', compact('skincare_products', 'haircare_products'));
+        return view('main_home');
     }
 
     public function showProduct(Product $product)
