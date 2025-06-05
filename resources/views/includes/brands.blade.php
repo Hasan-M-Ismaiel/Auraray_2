@@ -1,3 +1,15 @@
+<style>
+    .bg-accent {
+        background-color: #ffc451 !important;
+        color: #fff !important;
+    }
+
+    .bg-accent:hover {
+        background-color: #e6b744 !important;
+        /* slightly darker on hover */
+    }
+</style>
+
 <!-- Brands Section with Toggle -->
 <section id="brand" class="product section" x-data="{
     selectedBrand: 'auraray',
@@ -34,14 +46,14 @@
         <div id="subcategory-section" class="row justify-content-center mb-4" x-show="selectedBrand === 'auraray'">
             <div class="col-md-4">
                 <div @click="selectedCategory = 'haircare'"
-                    :class="selectedCategory === 'haircare' ? 'bg-success text-white' : 'bg-light text-dark border'"
+                    :class="selectedCategory === 'haircare' ? 'bg-accent' : 'bg-light text-dark border'"
                     class="p-3 text-center fw-medium rounded shadow-sm cursor-pointer">
                     Hair Care
                 </div>
             </div>
             <div class="col-md-4">
                 <div @click="selectedCategory = 'skincare'"
-                    :class="selectedCategory === 'skincare' ? 'bg-success text-white' : 'bg-light text-dark border'"
+                    :class="selectedCategory === 'skincare' ? 'bg-accent' : 'bg-light text-dark border'"
                     class="p-3 text-center fw-medium rounded shadow-sm cursor-pointer">
                     Skin Care
                 </div>
