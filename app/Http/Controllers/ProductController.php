@@ -78,4 +78,18 @@ class ProductController extends Controller
         return view('products.serum', compact('products'));
     }
 
+
+
+    // new API call
+    public function getByType(Request $request)
+    {
+        $type = $request->query('type');
+        $brand = $request->query('brand');
+
+        $products = \App\Models\Product::where('type', $type)
+            ->when($brand, fn($q) => $q->where('brand', $brand))
+            ->get();
+
+        return response()->json($products);
+    }
 }

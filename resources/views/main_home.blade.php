@@ -8,7 +8,7 @@
 
 
 <!-- Start Why us Area -->
-@include('includes.why_us')
+
 <!-- End Why us Area -->
 
 
@@ -20,8 +20,9 @@
 @include('includes.products')
 <!-- End products Area -->
 
-<!-- Start products Area -->
-<!-- End products Area -->
+<!-- Start brands Area -->
+@include('includes.brands')
+<!-- End brands Area -->
 
 <!-- Start brands Area -->
 <!-- End brands Area -->

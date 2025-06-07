@@ -9,9 +9,9 @@
         <nav id="navmenu" class="navmenu">
             <ul>
                 <li><a href="{{ route('home') }}" class="active">Home<br></a></li>
-                <li><a href="{{ route('home') }}#about">About Us</a></li>
+                <li><a href="{{ route('home') }}#about-2">About Us</a></li>
                 <li><a href="{{ route('home') }}#product ">Products</a></li>
-                <li class="dropdown"><a href="#"><span>Brands</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <li class="dropdown"><a href="{{ route('home') }}#product "><span>Brands</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
                         <li class="dropdown"><a href="#"><span>Auraray</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                             <ul>

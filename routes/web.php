@@ -38,3 +38,7 @@ Route::get('/service-3', [MainHomeController::class, 'service_3'])->name('servic
 
 Route::post('/storeContact', [StoreController::class, 'storeContact'])->name('storeContact');
 Route::post('/storeEmail', [StoreController::class, 'storeEmail'])->name('storeEmail');
+
+
+// You can keep this in web.php for simplicity now
+Route::get('/api/products', [ProductController::class, 'getByType']);

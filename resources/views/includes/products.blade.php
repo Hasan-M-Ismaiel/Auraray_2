@@ -28,7 +28,7 @@
 <section id="product" class="product section light-background">
 
     <div class="row gy-4 justify-content-center">
-        <div class="col-lg-4 ps-lg-5">
+        <div class="col-lg-6 ps-lg-5">
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Products</h2>
@@ -37,10 +37,10 @@
             <!-- End Section Title -->
         </div>
 
-        <div class="col-lg-5">
-            <div class="images-overlap">
-                <img src="assets/img/products.png" alt="student" class="img-fluid img-1" data-aos="fade-up">
-            </div>
+    </div>
+    <div class="col-lg-12">
+        <div class="images-overlap text-center">
+            <img src="assets/img/products.png" alt="student" class="img-fluid img-1" data-aos="fade-up">
         </div>
     </div>
 
