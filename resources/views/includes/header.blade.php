@@ -3,7 +3,7 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
         <a href="{{ route('home') }}" class="logo d-flex align-items-center me-auto me-lg-0">
-            <img src="{{ asset('assets/img/logo_.png') }}" alt="...">
+            <img src="{{ asset('assets/img/logo_.png') }}" alt="logo">
         </a>
 
         <nav id="navmenu" class="navmenu">

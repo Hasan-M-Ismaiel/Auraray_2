@@ -10,41 +10,77 @@
 
             <!-- Top Section: Two Brands -->
             <div x-show="step === 'main'" class="row transition" x-transition>
-                <div class="col-md-6">
+                <!-- Auraray Brand Card -->
+                <div class="col-md-6 mb-4">
                     <div class="p-5 bg-light shadow-sm hover-shadow rounded border cursor-pointer"
                         @click="selectBrand('Auraray')"
                         style="cursor: pointer; transition: all 0.3s ease;">
-                        <h3>Auraray</h3>
-                        <p class="p-2">AuraRay is the preferred choice of salon professionals and retailers worldwide, offering a comprehensive collection of high-performance solutions across haircare, shaving, grooming, and skincare. Designed for both professionals and consumers, AuraRay combines luxurious textures with proven efficacy to elevate daily beauty rituals. Trusted by experts, loved by users, and crafted for visible results.</p>
+
+                        <!-- Logo -->
+                        <img  src="{{ asset('assets/img/logo__.png') }}" alt="Auraray Logo" class="mb-3" style="max-width: 120px; height: auto;">
+
+                        <!-- Title -->
+                        <!-- <h3>Auraray</h3> -->
+
+                        <!-- Description -->
+                        <p class="p-2">
+                            AuraRay is the preferred choice of salon professionals and retailers worldwide, offering a comprehensive collection of high-performance solutions across haircare, shaving, grooming, and skincare. Designed for both professionals and consumers, AuraRay combines luxurious textures with proven efficacy to elevate daily beauty rituals. Trusted by experts, loved by users, and crafted for visible results.
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-6">
+
+                <!-- Beauty and Vitamins Brand Card -->
+                <div class="col-md-6 mb-4">
                     <div class="p-5 bg-light shadow-sm hover-shadow rounded border cursor-pointer"
                         @click="selectBrand('Beauty and Vitamins')"
                         style="cursor: pointer; transition: all 0.3s ease;">
-                        <h3>Beauty and Vitamins</h3>
-                        <p class="p-2">Beauty & Vitamins brings salon-quality beauty care into everyday routines with simple, effective, and easy-to-use formulations. Perfect for salons, professionals, and personal care enthusiasts, this brand offers essential haircare, grooming, and skincare solutions that seamlessly integrate into any lifestyle. Featuring clean ingredients, consistent performance, and a straightforward approach, Beauty & Vitamins delivers expert care without the complexity. Beauty made simple, smart, and accessible — every day.</p>
+
+                        <!-- Logo -->
+                        <img src="{{ asset('assets/img/logo_2.png') }}" alt="Beauty and Vitamins Logo" class="mb-3" style="max-width: 120px; height: auto;">
+
+                        <!-- Title -->
+                        <!-- <h3>Beauty and Vitamins</h3> -->
+
+                        <!-- Description -->
+                        <p class="p-2">
+                            Beauty & Vitamins brings salon-quality beauty care into everyday routines with simple, effective, and easy-to-use formulations. Perfect for salons, professionals, and personal care enthusiasts, this brand offers essential haircare, grooming, and skincare solutions that seamlessly integrate into any lifestyle. Featuring clean ingredients, consistent performance, and a straightforward approach, Beauty & Vitamins delivers expert care without the complexity. Beauty made simple, smart, and accessible — every day.
+                        </p>
                     </div>
                 </div>
             </div>
+
 
             <!-- Step 2: Brand -> Categories -->
             <div x-show="step === 'categories'" x-transition>
                 <button class="btn btn-sm btn-outline-secondary mb-3" @click="goBack()">← Back</button>
                 <h4 class="mb-3" x-text="brand"></h4>
                 <div class="row">
+                    <!-- Hair Care -->
                     <div class="col-md-6">
                         <div class="p-4 bg-light rounded border shadow-sm hover-shadow"
-                            @click="selectCategory('Hair care')"
+                            :class="{ 'cursor-pointer': brand === 'Auraray' }"
+                            @click="brand === 'Auraray' ? selectCategory('Hair care') : showComingSoon()"
                             style="cursor: pointer; transition: all 0.3s ease;">
-                            <h5>Hair Care</h5>
+                            <template x-if="brand === 'Auraray'">
+                                <h5>Hair Care</h5>
+                            </template>
+                            <template x-if="brand === 'Beauty and Vitamins'">
+                                <p class="text-muted mt-2">Coming soon</p>
+                            </template>
                         </div>
                     </div>
+                    <!-- Skin Care -->
                     <div class="col-md-6">
                         <div class="p-4 bg-light rounded border shadow-sm hover-shadow"
-                            @click="selectCategory('Skin care')"
+                            :class="{ 'cursor-pointer': brand === 'Auraray' }"
+                            @click="brand === 'Auraray' ? selectCategory('Skin care') : showComingSoon()"
                             style="cursor: pointer; transition: all 0.3s ease;">
-                            <h5>Skin Care</h5>
+                            <template x-if="brand === 'Auraray'">
+                                <h5>Skin Care</h5>
+                            </template>
+                            <template x-if="brand === 'Beauty and Vitamins'">
+                                <p class="text-muted mt-2">Coming soon</p>
+                            </template>
                         </div>
                     </div>
                 </div>
@@ -138,6 +174,10 @@
                 if (this.step === 'products') this.step = 'types';
                 else if (this.step === 'types') this.step = 'categories';
                 else if (this.step === 'categories') this.step = 'main';
+            },
+
+            showComingSoon() {
+                alert("This category will be available soon under Beauty and Vitamins.");
             }
         }
     }
