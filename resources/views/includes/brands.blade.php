@@ -3,7 +3,7 @@
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Brands</h2>
-        <p>Check our brands selection</p>
+        <p>Check our brands</p>
     </div>
     <div class="container mt-0" data-aos="fade-up" data-aos-delay="200">
         <div x-data="brandsComponent()" class="container py-5">
