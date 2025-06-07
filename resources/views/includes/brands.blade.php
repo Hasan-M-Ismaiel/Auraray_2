@@ -122,7 +122,7 @@
             getTypes() {
                 const map = {
                     'Hair care': ['Shampoo', 'Conditioner', 'Serum', 'Mask'],
-                    'Skin care': ['Lotion', 'Shower gel', 'Shower scrub', 'Message oil', 'Moroccan Soap'],
+                    'Skin care': ['Lotion', 'Shower gel', 'Shower scrub', 'Massage oil', 'Moroccan Soap'],
                 };
                 return map[this.category] || [];
             },
