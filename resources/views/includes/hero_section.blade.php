@@ -116,8 +116,7 @@
             Manufacturers of Premium Cosmetic Tools and Supplies
           </p>
           <p class="fst-italic text" style="margin-bottom: 0;">
-            <span style="color: #ffc451;">Al Enayah Al Kamlah</span> Excellence in Beauty Manufacturing
-            <br><br>
+            <span style="color: #ffc451;">Al Enayah Al Kamlah</span> Excellence in Beauty Manufacturing.
             At Al Enayah Al Kamlah, we are proud to be a trusted leader in crafting and supplying top-tier cosmetic tools
             and professional-grade beauty products. With decades of experience in the beauty industry, we proudly serve
             salons, spas, and global retailers by delivering an extensive range of premium solutions thoughtfully designed

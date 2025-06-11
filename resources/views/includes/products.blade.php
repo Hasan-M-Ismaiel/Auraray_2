@@ -40,7 +40,7 @@
     </div>
     <div class="col-lg-12">
         <div class="images-overlap text-center">
-            <img src="assets/img/products.png" alt="student" class="img-fluid img-1" data-aos="fade-up">
+            <img src="assets/img/products.png" alt="student" class="img-fluid img-1" data-aos="fade-up" style="max-width: 375px; height: auto;">
         </div>
     </div>
 
