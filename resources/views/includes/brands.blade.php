@@ -134,7 +134,7 @@
                 <h5 class="mb-3">Products for <span x-text="type"></span></h5>
                 <div class="row">
                     <template x-for="product in products" :key="product.id">
-                        <div class="col-md-4 mb-4">
+                        <div class="col-md-2 mb-4">
                             <div class="card h-100">
                                 <a :href="`/product/${product.id}`" class="btn btn-outline-dark btn-sm">
                                     <img :src="product.image" class="card-img-top" alt="" loading="lazy" />
