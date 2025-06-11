@@ -1,50 +1,74 @@
+<style>
+    .description.collapsed {
+        max-height: 80px;
+        /* adjust as needed */
+    }
+
+    .brand-logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        /* same as mb-3 */
+    }
+</style>
 <!-- Brands Section with Toggle -->
 <section id="brand" class="product section">
     <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
+    <div class="section-title" data-aos="fade-up">
         <h2>Brands</h2>
         <p>Check our brands</p>
     </div>
-    <div class="container mt-0" data-aos="fade-up" data-aos-delay="200">
-        <div x-data="brandsComponent()" class="container py-5">
+    <div class="container" data-aos="fade-up" data-aos-delay="200">
+        <div x-data="brandsComponent()" class="">
 
             <!-- Top Section: Two Brands -->
             <div x-show="step === 'main'" class="row transition" x-transition>
                 <!-- Auraray Brand Card -->
-                <div class="col-md-6 mb-4">
-                    <div class="p-5 bg-light shadow-sm hover-shadow rounded border cursor-pointer"
+                <div class="col-md-6 mb-4" x-data="{ expanded: false }">
+                    <div class="p-5 bg-light shadow-sm hover-shadow rounded border cursor-pointer d-flex flex-column"
                         @click="selectBrand('Auraray')"
-                        style="cursor: pointer; transition: all 0.3s ease;">
+                        :style="expanded ? 'height: auto; cursor: pointer; transition: all 0.3s ease;' : 'height: 320px; cursor: pointer; transition: all 0.3s ease;'">
+
 
                         <!-- Logo -->
-                        <img  src="{{ asset('assets/img/logo__.png') }}" alt="Auraray Logo" class="mb-3" style="max-width: 120px; height: auto;">
-
-                        <!-- Title -->
-                        <!-- <h3>Auraray</h3> -->
+                        <div class="brand-logo-container">
+                            <img src="{{ asset('assets/img/logo__.png') }}" alt="Auraray Logo" style="max-width: 215px; height: auto;">
+                        </div>
 
                         <!-- Description -->
-                        <p class="p-2">
+                        <p class="p-2 description" :class="{ 'collapsed': !expanded }" style="flex-grow: 1; overflow: hidden; transition: max-height 0.3s ease;">
                             AuraRay is the preferred choice of salon professionals and retailers worldwide, offering a comprehensive collection of high-performance solutions across haircare, shaving, grooming, and skincare. Designed for both professionals and consumers, AuraRay combines luxurious textures with proven efficacy to elevate daily beauty rituals. Trusted by experts, loved by users, and crafted for visible results.
                         </p>
+
+                        <!-- Show more / less button -->
+                        <button @click.stop="expanded = !expanded" class="btn btn-link p-0" style="font-size: 0.9rem;">
+                            <span x-text="expanded ? 'Show less' : 'Show more'"></span>
+                        </button>
                     </div>
                 </div>
 
                 <!-- Beauty and Vitamins Brand Card -->
-                <div class="col-md-6 mb-4">
-                    <div class="p-5 bg-light shadow-sm hover-shadow rounded border cursor-pointer"
+                <div class="col-md-6 mb-4" x-data="{ expanded: false }">
+                    <div class="p-5 bg-light shadow-sm hover-shadow rounded border cursor-pointer d-flex flex-column"
                         @click="selectBrand('Beauty and Vitamins')"
-                        style="cursor: pointer; transition: all 0.3s ease;">
+                        :style="expanded ? 'height: auto; cursor: pointer; transition: all 0.3s ease;' : 'height: 320px; cursor: pointer; transition: all 0.3s ease;'">
+
 
                         <!-- Logo -->
-                        <img src="{{ asset('assets/img/logo_2.png') }}" alt="Beauty and Vitamins Logo" class="mb-3" style="max-width: 120px; height: auto;">
-
-                        <!-- Title -->
-                        <!-- <h3>Beauty and Vitamins</h3> -->
+                        <div class="brand-logo-container">
+                            <img src="{{ asset('assets/img/logo_2.png') }}" alt="Beauty and Vitamins Logo" class="mb-3 mx-auto d-block" style="max-width: 200px; height: auto;">
+                        </div>
 
                         <!-- Description -->
-                        <p class="p-2">
+                        <p class="p-2 description" :class="{ 'collapsed': !expanded }" style="flex-grow: 1; overflow: hidden; transition: max-height 0.3s ease;">
                             Beauty & Vitamins brings salon-quality beauty care into everyday routines with simple, effective, and easy-to-use formulations. Perfect for salons, professionals, and personal care enthusiasts, this brand offers essential haircare, grooming, and skincare solutions that seamlessly integrate into any lifestyle. Featuring clean ingredients, consistent performance, and a straightforward approach, Beauty & Vitamins delivers expert care without the complexity. Beauty made simple, smart, and accessible — every day.
                         </p>
+
+                        <!-- Show more / less button -->
+                        <button @click.stop="expanded = !expanded" class="btn btn-link p-0" style="font-size: 0.9rem;">
+                            <span x-text="expanded ? 'Show less' : 'Show more'"></span>
+                        </button>
                     </div>
                 </div>
             </div>
