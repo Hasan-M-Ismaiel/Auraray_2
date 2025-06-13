@@ -39,7 +39,7 @@
                                     <div class="carousel-image-wrapper">
                                         <img src="assets/img/services_1.png" alt="" loading="lazy" class="d-block w-100" alt="...">
                                         <div class="overlay"></div>
-                                        <div class="caption-overlay d-none d-md-block">
+                                        <div class="caption-overlay">
                                             <h5 style="color: whitesmoke;">Private Label Manufacturing</h5>
                                             <p style="color: whitesmoke;">Create Your Own Brand with Custom Beauty Products</p>
                                         </div>
@@ -51,7 +51,7 @@
                                     <div class="carousel-image-wrapper">
                                         <img src="assets/img/services_2.png" alt="" loading="lazy" class="d-block w-100" alt="...">
                                         <div class="overlay"></div>
-                                        <div class="caption-overlay d-none d-md-block">
+                                        <div class="caption-overlay">
                                             <h5 style="color: whitesmoke;">Beauty Kits for Hotels</h5>
                                             <p style="color: whitesmoke;">Enhance Your Hotel Experience with Luxury Beauty Kits</p>
                                         </div>
@@ -63,7 +63,7 @@
                                     <div class="carousel-image-wrapper">
                                         <img src="assets/img/services_3.png" alt="" loading="lazy" class="d-block w-100" alt="...">
                                         <div class="overlay"></div>
-                                        <div class="caption-overlay d-none d-md-block">
+                                        <div class="caption-overlay">
                                             <h5 style="color: whitesmoke;">Exporting & Delivery Services</h5>
                                             <p style="color: whitesmoke;"> Reliable Exporting and Bulk Shipping of Premium Beauty Products</p>
                                         </div>

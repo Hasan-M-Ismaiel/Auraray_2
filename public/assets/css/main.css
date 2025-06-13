@@ -2741,3 +2741,20 @@ section,
   /* padding: 0px; */
 }
 
+
+@media (max-width: 767.98px) {
+  .caption-overlay {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 14px; /* adjust as needed */
+    padding: 10px;
+  }
+
+  .caption-overlay h5,
+  .caption-overlay p {
+    color: white;
+  }
+}
+
