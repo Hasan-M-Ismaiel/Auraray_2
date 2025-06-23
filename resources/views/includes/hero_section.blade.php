@@ -1,50 +1,63 @@
 <!-- About Section -->
-<section id="about" class="about section" style="padding: 60px 0; text-align: center;">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="400">
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": 1,
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 20
-                },
-                "1200": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="assets/img/about_1.png" alt="Image" class="about-image">
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/about_2.png" alt="Image" class="about-image">
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
+<section id="about" class="about section" style="padding: 0; margin: 0;">
+  <div class="swiper init-swiper" style="width: 100vw;">
+    <script type="application/json" class="swiper-config">
+      {
+        "loop": true,
+        "speed": 600,
+        "autoplay": {
+          "delay": 5000
+        },
+        "slidesPerView": 1,
+        "pagination": {
+          "el": ".swiper-pagination",
+          "type": "bullets",
+          "clickable": true
+        },
+        "breakpoints": {
+          "320": {
+            "slidesPerView": 1,
+            "spaceBetween": 0
+          },
+          "1200": {
+            "slidesPerView": 1,
+            "spaceBetween": 0
+          }
+        }
+      }
+    </script>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="assets/img/about_1.jpeg" alt="Image" class="about-full-image">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/img/about_2.jpeg" alt="Image" class="about-full-image">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/img/about_3.jpeg" alt="Image" class="about-full-image">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/img/about_4.jpeg" alt="Image" class="about-full-image">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/img/about_5.jpeg" alt="Image" class="about-full-image">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/img/about_6.jpeg" alt="Image" class="about-full-image">
       </div>
     </div>
+    <div class="swiper-pagination"></div>
   </div>
 </section>
 
 <style>
+  .about-full-image {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
   .about-image {
     height: 250px;
     width: auto;
@@ -52,13 +65,21 @@
     margin: 0 auto;
     display: block;
     border-radius: 12px;
-    /* Removed box-shadow */
+  }
+
+  .swiper-slide {
+    padding: 0;
+    margin: 0;
+  }
+
+  .swiper-wrapper {
+    margin: 0;
   }
 
   .about-2 {
-    padding: 60px 40px; /* padding replaces margin for spacing inside */
+    padding: 60px 40px;
     max-width: 1200px;
-    margin: 0 auto; /* center horizontally */
+    margin: 0 auto;
   }
 
   .row {
@@ -107,7 +128,6 @@
 <section id="about-2" class="about-2 section">
   <div class="container">
     <div class="content">
-
       <!-- First row: text and image side by side -->
       <div class="row">
         <div class="text-col" data-aos="fade-up">
@@ -146,7 +166,6 @@
           <a id="toggleTextBottom" class="expandable" onclick="toggleMoreText()">Show less</a>
         </p>
       </div>
-
     </div>
   </div>
 </section>
