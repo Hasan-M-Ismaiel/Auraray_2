@@ -9,7 +9,6 @@
 
 <!-- Services 2 Section -->
 <section id="services-2" class="services-2 section">
-
     <div class="container">
         <div class="row justify-content-center" data-aos="fade-up">
             <div class="col-md-6 col-lg-4">
@@ -84,6 +83,5 @@
 
             </div>
         </div>
-    </div>
     </div>
 </section><!-- /Services 2 Section -->

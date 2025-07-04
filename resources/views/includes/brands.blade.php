@@ -26,18 +26,24 @@
             <div x-show="step === 'main'" class="row transition" x-transition>
                 <!-- Auraray Brand Card -->
                 <div class="col-md-6 mb-4" x-data="{ expanded: false }">
-                    <div class="p-5 bg-light shadow-sm hover-shadow rounded border cursor-pointer d-flex flex-column"
-                        @click="selectBrand('Auraray')"
-                        :style="expanded ? 'height: auto; cursor: pointer; transition: all 0.3s ease;' : 'height: 320px; cursor: pointer; transition: all 0.3s ease;'">
-
+                    <div class="p-5 bg-light shadow-sm hover-shadow rounded border d-flex flex-column"
+                        :style="expanded ? 'height: auto; transition: all 0.3s ease;' : 'height: 380px; transition: all 0.3s ease;'">
 
                         <!-- Logo -->
                         <div class="brand-logo-container">
                             <img src="{{ asset('assets/img/logo__.png') }}" alt="Auraray Logo" style="max-width: 215px; height: auto;">
                         </div>
 
+                        <!-- Compact Navigate Button -->
+                        <div class="text-center" style="margin-bottom: 0.5rem;">
+                            <button @click="selectBrand('Auraray')" class="btn btn-sm btn-outline-secondary">
+                                Explore
+                            </button>
+                        </div>
+
                         <!-- Description -->
-                        <p class="p-2 description" :class="{ 'collapsed': !expanded }" style="flex-grow: 1; overflow: hidden; transition: max-height 0.3s ease;">
+                        <p class="p-2 description" :class="{ 'collapsed': !expanded }"
+                            style="flex-grow: 1; overflow: hidden; transition: max-height 0.3s ease;">
                             AuraRay is the preferred choice of salon professionals and retailers worldwide, offering a comprehensive collection of high-performance solutions across haircare, shaving, grooming, and skincare. Designed for both professionals and consumers, AuraRay combines luxurious textures with proven efficacy to elevate daily beauty rituals. Trusted by experts, loved by users, and crafted for visible results.
                         </p>
 
@@ -48,20 +54,27 @@
                     </div>
                 </div>
 
+
                 <!-- Beauty and Vitamins Brand Card -->
                 <div class="col-md-6 mb-4" x-data="{ expanded: false }">
-                    <div class="p-5 bg-light shadow-sm hover-shadow rounded border cursor-pointer d-flex flex-column"
-                        @click="selectBrand('Beauty and Vitamins')"
-                        :style="expanded ? 'height: auto; cursor: pointer; transition: all 0.3s ease;' : 'height: 320px; cursor: pointer; transition: all 0.3s ease;'">
-
+                    <div class="p-5 bg-light shadow-sm hover-shadow rounded border d-flex flex-column"
+                        :style="expanded ? 'height: auto; transition: all 0.3s ease;' : 'height: 380px; transition: all 0.3s ease;'">
 
                         <!-- Logo -->
                         <div class="brand-logo-container">
-                            <img src="{{ asset('assets/img/logo_2.png') }}" alt="Beauty and Vitamins Logo" class="mb-3 mx-auto d-block" style="max-width: 200px; height: auto;">
+                            <img src="{{ asset('assets/img/logo_2.png') }}" alt="Beauty and Vitamins Logo" style="max-width: 200px; height: auto;">
+                        </div>
+
+                        <!-- Compact Navigate Button -->
+                        <div class="text-center" style="margin-bottom: 0.5rem;">
+                            <button @click="selectBrand('Beauty and Vitamins')" class="btn btn-sm btn-outline-secondary">
+                                Explore
+                            </button>
                         </div>
 
                         <!-- Description -->
-                        <p class="p-2 description" :class="{ 'collapsed': !expanded }" style="flex-grow: 1; overflow: hidden; transition: max-height 0.3s ease;">
+                        <p class="p-2 description" :class="{ 'collapsed': !expanded }"
+                            style="flex-grow: 1; overflow: hidden; transition: max-height 0.3s ease;">
                             Beauty & Vitamins brings salon-quality beauty care into everyday routines with simple, effective, and easy-to-use formulations. Perfect for salons, professionals, and personal care enthusiasts, this brand offers essential haircare, grooming, and skincare solutions that seamlessly integrate into any lifestyle. Featuring clean ingredients, consistent performance, and a straightforward approach, Beauty & Vitamins delivers expert care without the complexity. Beauty made simple, smart, and accessible — every day.
                         </p>
 
@@ -71,6 +84,7 @@
                         </button>
                     </div>
                 </div>
+
             </div>
 
 
