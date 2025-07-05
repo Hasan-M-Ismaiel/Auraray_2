@@ -213,6 +213,15 @@
                 if (this.step === 'products') this.step = 'types';
                 else if (this.step === 'types') this.step = 'categories';
                 else if (this.step === 'categories') this.step = 'main';
+
+                // Scroll to the top of the #brand section
+                this.$nextTick(() => {
+                    const section = document.querySelector('#brand');
+                    if (section) section.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                });
             },
 
             showComingSoon() {
