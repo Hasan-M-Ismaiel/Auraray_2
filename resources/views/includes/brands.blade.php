@@ -168,6 +168,7 @@
                         </div>
                     </template>
                 </div>
+                <button class="btn btn-sm btn-outline-secondary mb-3" @click="goBack()">← Back</button>
             </div>
 
         </div>
