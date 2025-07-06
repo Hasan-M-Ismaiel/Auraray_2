@@ -9,7 +9,7 @@
                         <p>Al Enayah Al Kamlah Manufacture Of Cosmetic Tools & Supplies L.L.C</p>
                         <p class="mt-3"><strong>Location:</strong> <span>Sajaa Industrial <span id="check">|</span> UAE, Sharjah</span></p>
                         <p class="mt-3"><strong>Phone:</strong> <span>+971 6 715 5323</span></p>
-                        <p><strong>Email:</strong> <span><a href="mailto:info@auraray.ae">info@auraray.ae</a></span></p>
+                        <p><strong>Email:</strong> <span><a href="mailto:info@ekcosmetic.com">info@ekcosmetic.com</a></span></p>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@
                             <a href="#"><span class="bi bi-linkedin"></span></a>
                         </li>
                         <li>
-                            <a href="#"><span class="bi bi-instagram"></span></a>
+                            <a href="https://www.instagram.com/alenayah_alkamlah/"><span class="bi bi-instagram"></span></a>
                         </li>
                     </ul>
                 </div>
