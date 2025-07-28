@@ -37,7 +37,7 @@
             <h4 class="mb-4 text-center fw-bold border-bottom pb-2">Bath</h4>
             <div class="row gx-3 gy-4 justify-content-center">
                 @foreach ($products as $product)
-                    <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="col-lg-2 col-md-3 col-sm-3">
                         <a href="{{ route('product', [$product->id]) }}" class="d-block text-center">
                             <div class="card border-0 shadow-sm h-100">
                                 <img src="{{ asset($product->image) }}" alt="{{ $product->type }} Product"
