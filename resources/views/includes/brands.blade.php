@@ -178,6 +178,9 @@
                                             <p class="card-text" x-text="product.category + ' - ' + product.flavor"></p>
                                         </template>
 
+                                        <template x-if="product.category === 'Baby Care'">
+                                            <p class="card-text" x-text="product.category + ' - ' + product.color"></p>
+                                        </template>
                                     </div>
                                 </a>
                             </div>
