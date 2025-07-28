@@ -52,10 +52,13 @@
                             <li><strong>Size</strong>: {{ $product->size }}</li>
                             <li><strong>Ingredients</strong>: {{ $product->ingredients }}</li>
                             <li><strong>Description</strong>: {{ $product->description}}</li>
+
                             @if($product->category == "Hair Care")
-                            <li><strong>Main Extract</strong>: {{ $product->extract}}</li>
-                            @else
-                            <li><strong>Main Scent</strong>: {{ $product->flavor}}</li>
+                            <li><strong>Main Extract</strong>: {{ $product->extract }}</li>
+                            @elseif($product->category == "Skin Care")
+                            <li><strong>Main Scent</strong>: {{ $product->flavor }}</li>
+                            @elseif($product->category == "Baby Care")
+                            <li><strong>Color</strong>: {{ $product->color }}</li>
                             @endif
                         </ul>
                     </div>
