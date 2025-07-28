@@ -94,7 +94,7 @@
                 <h4 class="mb-3" x-text="brand"></h4>
                 <div class="row">
                     <!-- Hair Care -->
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="p-4 bg-light rounded border shadow-sm hover-shadow"
                             :class="{ 'cursor-pointer': brand === 'Auraray' }"
                             @click="brand === 'Auraray' ? selectCategory('Hair care') : showComingSoon()"
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                     <!-- Skin Care -->
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="p-4 bg-light rounded border shadow-sm hover-shadow"
                             :class="{ 'cursor-pointer': brand === 'Auraray' }"
                             @click="brand === 'Auraray' ? selectCategory('Skin care') : showComingSoon()"
@@ -122,7 +122,7 @@
                         </div>
                     </div>
                     <!-- Baby Care -->
-                    <div class="col-md-6 mt-2">
+                    <div class="col-md-4">
                         <div class="p-4 bg-light rounded border shadow-sm hover-shadow"
                             :class="{ 'cursor-pointer': brand === 'Auraray' }"
                             @click="brand === 'Auraray' ? selectCategory('Baby care') : showComingSoon()"
