@@ -121,6 +121,21 @@
                             </template>
                         </div>
                     </div>
+                    <!-- Baby Care -->
+                    <div class="col-md-6">
+                        <div class="p-4 bg-light rounded border shadow-sm hover-shadow"
+                            :class="{ 'cursor-pointer': brand === 'Auraray' }"
+                            @click="brand === 'Auraray' ? selectCategory('Baby care') : showComingSoon()"
+                            style="cursor: pointer; transition: all 0.3s ease;">
+                            <template x-if="brand === 'Auraray'">
+                                <h5>Baby Care</h5>
+                            </template>
+                            <template x-if="brand === 'Beauty and Vitamins'">
+                                <p class="text-muted mt-2">Coming soon</p>
+                            </template>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -162,6 +177,7 @@
                                         <template x-if="product.category === 'Skin Care'">
                                             <p class="card-text" x-text="product.category + ' - ' + product.flavor"></p>
                                         </template>
+
                                     </div>
                                 </a>
                             </div>
@@ -198,9 +214,11 @@
                 const map = {
                     'Hair care': ['Shampoo', 'Conditioner', 'Serum', 'Mask'],
                     'Skin care': ['Lotion', 'Shower gel', 'Shower scrub', 'Massage oil', 'Moroccan Soap'],
+                    'Baby care': ['Baby bath', 'Baby cologne', 'Baby lotion', 'Baby oil', 'Baby shampoo'],
                 };
                 return map[this.category] || [];
             },
+
 
             async fetchProducts(type) {
                 this.type = type;
