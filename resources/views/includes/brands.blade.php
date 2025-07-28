@@ -122,7 +122,7 @@
                         </div>
                     </div>
                     <!-- Baby Care -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 mt-2">
                         <div class="p-4 bg-light rounded border shadow-sm hover-shadow"
                             :class="{ 'cursor-pointer': brand === 'Auraray' }"
                             @click="brand === 'Auraray' ? selectCategory('Baby care') : showComingSoon()"
