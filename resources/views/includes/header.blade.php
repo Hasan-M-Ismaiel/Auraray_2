@@ -31,6 +31,15 @@
                                         <li><a href="{{ route('products.moroccan_soap') }}">Moroccan Soap</a></li>
                                     </ul>
                                 </li>
+                                <li class="dropdown"><a href="#"><span>Baby care</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                                    <ul>
+                                        <li><a href="{{ route('products.lotion') }}">Baby bath</a></li>
+                                        <li><a href="{{ route('products.shower_gel') }}">Baby cologne</a></li>
+                                        <li><a href="{{ route('products.shower_scrub') }}">Baby lotion</a></li>
+                                        <li><a href="{{ route('products.message_oil') }}">Baby oil</a></li>
+                                        <li><a href="{{ route('products.moroccan_soap') }}">Baby shampoo</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                         <li class="dropdown"><a href="#"><span>Beauty & Vitamins</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>

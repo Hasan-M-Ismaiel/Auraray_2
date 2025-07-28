@@ -31,6 +31,12 @@ Route::get('/products/moroccan_soap', [ProductController::class, 'showmoroccan_s
 Route::get('/products/conditioner', [ProductController::class, 'showconditioner'])->name('products.conditioner');
 Route::get('/products/serum', [ProductController::class, 'showserum'])->name('products.serum');
 
+Route::get('/products/baby_bath', [ProductController::class, 'showbaby_bath'])->name('products.baby_bath');
+Route::get('/products/baby_cologne', [ProductController::class, 'showbaby_cologne'])->name('products.baby_cologne');
+Route::get('/products/baby_lotion', [ProductController::class, 'showbaby_lotion'])->name('products.baby_lotion');
+Route::get('/products/baby_oil', [ProductController::class, 'showbaby_oil'])->name('products.baby_oil');
+Route::get('/products/baby_shampoo', [ProductController::class, 'showbaby_shampoo'])->name('products.baby_shampoo');
+
 Route::get('/service-1', [MainHomeController::class, 'service_1'])->name('service_1');
 Route::get('/service-2', [MainHomeController::class, 'service_2'])->name('service_2');
 Route::get('/service-3', [MainHomeController::class, 'service_3'])->name('service_3');
