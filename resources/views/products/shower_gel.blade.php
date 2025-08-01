@@ -25,6 +25,10 @@
                     <li class="current">Skin Care</li>
                     <li class="current">Shower gel</li>
                 </ol>
+                <!-- زر الرجوع -->
+                <button onclick="window.history.back()" class="btn btn-secondary mt-3">
+                    ← Back
+                </button>
             </div>
         </nav>
     </div><!-- End Page Title -->
