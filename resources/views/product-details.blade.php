@@ -54,8 +54,8 @@
                         <ul>
                             <li><strong>Category</strong>: {{ $product->category }}</li>
                             <li><strong>Size</strong>: {{ $product->size }}</li>
-                            <li><strong>Ingredients</strong>: {{ $product->ingredients }}</li>
                             <li><strong>Description</strong>: {{ $product->description}}</li>
+                            <li><strong>Ingredients</strong>: {{ $product->ingredients }}</li>
 
                             @if($product->category == "Hair Care")
                             <li><strong>Main Extract</strong>: {{ $product->extract }}</li>
