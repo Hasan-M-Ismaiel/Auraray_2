@@ -21,7 +21,7 @@
             <div class="container">
                 <ol>
                     <li><a href="{{ route('home') }}">Home</a></li>
-                    <li class="current">Auraray</li>
+                    <li class="current"><a href="{{ route('home') }}#brand">Auraray</a></li>
                     <li class="current">Hair care</li>
                     <li class="current">Conditioner</li>
                 </ol>

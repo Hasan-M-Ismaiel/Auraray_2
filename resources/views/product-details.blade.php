@@ -22,6 +22,10 @@
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li class="current">Product Details</li>
                 </ol>
+                <!-- زر الرجوع -->
+                <button onclick="window.history.back()" class="btn btn-secondary mt-3">
+                    ← Back
+                </button>
             </div>
         </nav>
     </div><!-- End Page Title -->
