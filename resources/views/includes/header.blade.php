@@ -49,8 +49,8 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="{{ route('home') }}#services-2">Services</a></li>
-                <li><a href="{{ route('home') }}#tabs">Quality</a></li>
+                <li><a href="{{ route('home') }}#services">Services</a></li>
+                <li><a href="{{ route('home') }}#Quality">Quality</a></li>
                 <li><a href="{{ route('home') }}#contact ">Contact Us</a></li>
                 <li><a href="{{ asset('assets/catalog/Auraray.pdf') }}"><i class="bi bi-download me-2" id="Catalog_icon"></i>Catalog</a></li>
             </ul>

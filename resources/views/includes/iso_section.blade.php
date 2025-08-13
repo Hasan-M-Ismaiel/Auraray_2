@@ -1,5 +1,5 @@
 <!-- Tabs Section -->
-<section id="tabs" class="tabs section light-background">
+<section id="Quality" class="tabs section light-background">
 
     <div class="container">
         <span class="content-subtitle mb-3">Certifications & Commitment to Quality</span>
@@ -96,7 +96,7 @@
                     </script>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="assets/img/iso/1.png" alt="Image" class="img-fluid">
+                            <img src="assets/img/iso/iso-certificates.png" alt="iso certificates image" class="img-fluid">
                             <div class="p-4">
                                 <div class="row">
                                     <div class="col-lg-8">
@@ -124,13 +124,13 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="assets/img/iso/2.png" alt="Image" class="img-fluid">
+                            <img src="assets/img/iso/customer-support.png" alt="customer support image" class="img-fluid">
                         </div>
                         <div class="swiper-slide">
-                            <img src="assets/img/iso/3.png" alt="Image" class="img-fluid">
+                            <img src="assets/img/iso/customizable-solutions.png" alt="customizable solutions image" class="img-fluid">
                         </div>
                         <div class="swiper-slide">
-                            <img src="assets/img/iso/4.png" alt="Image" class="img-fluid">
+                            <img src="assets/img/iso/fragarant.png" alt="fragarant benifits image" class="img-fluid">
                         </div>
                     </div>
                 </div>
