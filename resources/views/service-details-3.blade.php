@@ -57,7 +57,7 @@
                         <h4>Have a Question?</h4>
                         <div class="download-catalog">
                             <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span>+971 6 715 5323</span></p>
-                            <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a href="mailto:info@auraray.ae">info@auraray.ae</a></p>
+                            <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a href="mailto:info@ekcosmetic.com">info@ekcosmetic.com</a></p>
                         </div>
                     </div>
 

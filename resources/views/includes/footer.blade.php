@@ -47,13 +47,13 @@
                     <h3 class="widget-heading">Connect</h3>
                     <ul class="list-unstyled social-icons light mb-3">
                         <li>
+                            <a href="https://www.instagram.com/alenayah_alkamlah/"><span class="bi bi-instagram"></span></a>
+                        </li>
+                        <li>
                             <a href="https://www.facebook.com/AlenayahAlkamlah"><span class="bi bi-facebook"></span></a>
                         </li>
                         <li>
                             <a href="#"><span class="bi bi-linkedin"></span></a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/alenayah_alkamlah/"><span class="bi bi-instagram"></span></a>
                         </li>
                     </ul>
                 </div>

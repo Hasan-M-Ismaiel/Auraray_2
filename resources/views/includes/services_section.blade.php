@@ -36,7 +36,7 @@
                             <div class="carousel-item active">
                                 <a href="{{ route('service_1') }}">
                                     <div class="carousel-image-wrapper">
-                                        <img src="assets/img/services_1.png" alt="" loading="lazy" class="d-block w-100" alt="...">
+                                        <img src="assets/img/Private-Label-Manufacturing-service.png" alt="" loading="lazy" class="d-block w-100" alt="...">
                                         <div class="overlay"></div>
                                         <div class="caption-overlay">
                                             <h5 style="color: whitesmoke;">Private Label Manufacturing</h5>
@@ -48,7 +48,7 @@
                             <div class="carousel-item">
                                 <a href="{{ route('service_2') }}">
                                     <div class="carousel-image-wrapper">
-                                        <img src="assets/img/services_2.png" alt="" loading="lazy" class="d-block w-100" alt="...">
+                                        <img src="assets/img/Beauty-Kits-for-Hotels.png" alt="" loading="lazy" class="d-block w-100" alt="...">
                                         <div class="overlay"></div>
                                         <div class="caption-overlay">
                                             <h5 style="color: whitesmoke;">Beauty Kits for Hotels</h5>
@@ -60,7 +60,7 @@
                             <div class="carousel-item">
                                 <a href="{{ route('service_3') }}">
                                     <div class="carousel-image-wrapper">
-                                        <img src="assets/img/services_3.png" alt="" loading="lazy" class="d-block w-100" alt="...">
+                                        <img src="assets/img/Exporting-and-Delivery-Services.png" alt="" loading="lazy" class="d-block w-100" alt="...">
                                         <div class="overlay"></div>
                                         <div class="caption-overlay">
                                             <h5 style="color: whitesmoke;">Exporting & Delivery Services</h5>
