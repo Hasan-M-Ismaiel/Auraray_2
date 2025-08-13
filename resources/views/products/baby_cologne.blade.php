@@ -1,8 +1,11 @@
 @extends('layouts.app_main')
 
+@section('title', 'Product | Baby Cologne - details - Baby care')
+
+@section('meta_description', 'Browse our baby cologne collection, offering a variety of gentle scents, colors, and sizes, perfect for keeping your little one fresh and cared for.')
+
+
 @section('content')
-
-
 <main class="main">
 
     <!-- Page Title -->

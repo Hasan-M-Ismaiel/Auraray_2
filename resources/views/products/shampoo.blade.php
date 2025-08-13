@@ -1,7 +1,10 @@
 @extends('layouts.app_main')
 
-@section('content')
+@section('title', 'Product | Shampoo  - details - Hair care')
 
+@section('meta_description', 'Our Shampoo is crafted to cleanse and nourish your hair gently yet effectively. Enriched with natural extracts, it restores shine, strengthens strands, and promotes healthy, manageable hair for everyday vitality.')
+
+@section('content')
 
 <main class="main">
 

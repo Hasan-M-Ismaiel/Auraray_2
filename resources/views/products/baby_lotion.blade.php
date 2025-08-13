@@ -1,8 +1,11 @@
 @extends('layouts.app_main')
 
+@section('title', 'Product | Baby Lotion - details - Baby care')
+
+@section('meta_description', 'Explore our baby lotion collection, featuring gentle formulas in various colors and sizes to keep your little one’s skin soft, nourished, and cared for.')
+
+
 @section('content')
-
-
 <main class="main">
 
     <!-- Page Title -->

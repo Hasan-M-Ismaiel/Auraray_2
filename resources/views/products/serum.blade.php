@@ -1,8 +1,10 @@
 @extends('layouts.app_main')
 
+@section('title', 'Product | Serum  - details - Hair care')
+
+@section('meta_description', 'Our Hair Serum is designed to nourish, smooth, and protect your hair. Enriched with natural extracts, it tames frizz, adds shine, and keeps your hair healthy and manageable.')
+
 @section('content')
-
-
 <main class="main">
 
     <!-- Page Title -->

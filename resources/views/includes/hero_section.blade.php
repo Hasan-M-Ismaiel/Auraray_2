@@ -28,22 +28,22 @@
     </script>
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <img src="assets/img/about_1.jpeg" alt="Image" class="about-full-image">
+        <img src="assets/img/about-factory.jpeg" alt="factory and Chemists" class="about-full-image">
       </div>
       <div class="swiper-slide">
-        <img src="assets/img/about_2.jpeg" alt="Image" class="about-full-image">
+        <img src="assets/img/Laboratory.jpeg" alt="Laboratory" class="about-full-image">
       </div>
       <div class="swiper-slide">
-        <img src="assets/img/about_3.jpeg" alt="Image" class="about-full-image">
+        <img src="assets/img/Factory-machines.jpeg" alt="Factory machines" class="about-full-image">
       </div>
       <div class="swiper-slide">
-        <img src="assets/img/about_4.jpeg" alt="Image" class="about-full-image">
+        <img src="assets/img/Natural-chemicals.jpeg" alt="Natural chemicals" class="about-full-image">
       </div>
       <div class="swiper-slide">
-        <img src="assets/img/about_5.jpeg" alt="Image" class="about-full-image">
+        <img src="assets/img/Factory-machines-Scientists.jpeg" alt="Factory machines and Scientists" class="about-full-image">
       </div>
       <div class="swiper-slide">
-        <img src="assets/img/about_6.jpeg" alt="Image" class="about-full-image">
+        <img src="assets/img/Production-line.jpeg" alt="Production line" class="about-full-image">
       </div>
     </div>
     <div class="swiper-pagination"></div>
@@ -146,7 +146,7 @@
         </div>
 
         <div class="image-col" data-aos="fade-up" data-aos-delay="100">
-          <img src="{{ asset('assets/img/logo_.png') }}" class="img-fluid about-image" loading="lazy" alt="Logo">
+          <img src="{{ asset('assets/img/AlEnayah-Alkamlah-logo.png') }}" class="img-fluid about-image" loading="lazy" alt="AlEnayah Alkamlah logo">
         </div>
       </div>
 

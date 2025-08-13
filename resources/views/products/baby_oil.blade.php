@@ -1,8 +1,10 @@
 @extends('layouts.app_main')
 
+@section('title', 'Product | Baby Oil - details - Baby care')
+
+@section('meta_description', 'Discover our baby oil collection, designed to gently nourish and moisturize your baby’s skin. Available in multiple colors and sizes to suit your baby care needs.')
+
 @section('content')
-
-
 <main class="main">
 
     <!-- Page Title -->

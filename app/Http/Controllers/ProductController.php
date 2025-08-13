@@ -36,7 +36,7 @@ class ProductController extends Controller
         return view('products.lotion', compact('products'));
     }
 
-    public function showmessage_oil(Product $Product)
+    public function showmassage_oil(Product $Product)
     {
         $products = Product::where('type', 'Massage oil')->get();
         return view('products.message_oil', compact('products'));

@@ -1,8 +1,10 @@
 @extends('layouts.app_main')
 
+@section('title', 'Product | Mask - details - Hair care')
+
+@section('meta_description', 'Revitalize and nourish your hair with our premium hair masks. Infused with natural extracts, they provide deep conditioning, strengthen strands, and restore shine for healthy, soft, and manageable hair.')
+
 @section('content')
-
-
 <main class="main">
 
     <!-- Page Title -->

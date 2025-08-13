@@ -13,7 +13,7 @@
                 </div>
 
                 <div class="image-col" data-aos="fade-up" data-aos-delay="100">
-                    <img src="{{ asset('assets/img/products.png') }}" class="img-fluid about-image" loading="lazy" alt="Logo">
+                    <img src="{{ asset('assets/img/products.png') }}" class="img-fluid about-image" loading="lazy" alt="">
                 </div>
             </div>
         </div>

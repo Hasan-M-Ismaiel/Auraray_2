@@ -1,10 +1,11 @@
 @extends('layouts.app_main')
 
+@section('title', 'Product | Shower Scrub - details - Skin care')
+
+@section('meta_description', 'Our Shower Scrub gently exfoliates, removing dead skin cells and impurities to reveal smooth, radiant skin. Infused with natural flavors and nourishing ingredients, it invigorates your senses while leaving your skin soft, refreshed, and glowing.')
+
 @section('content')
-
-
 <main class="main">
-
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
         <div class="heading">
@@ -63,5 +64,4 @@
     </section><!-- /Service Details Section -->
 
 </main>
-
 @endsection

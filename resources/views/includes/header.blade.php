@@ -3,7 +3,7 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
         <a href="{{ route('home') }}" class="logo d-flex align-items-center me-auto me-lg-0">
-            <img src="{{ asset('assets/img/logo_.png') }}" alt="logo">
+            <img src="{{ asset('assets/img/AlEnayah-Alkamlah-logo.png') }}" alt="AlEnayah-Alkamlah-logo">
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -27,7 +27,7 @@
                                         <li><a href="{{ route('products.lotion') }}">Lotion</a></li>
                                         <li><a href="{{ route('products.shower_gel') }}">Shower gel</a></li>
                                         <li><a href="{{ route('products.shower_scrub') }}">Shower scrub</a></li>
-                                        <li><a href="{{ route('products.message_oil') }}">Massage oil</a></li>
+                                        <li><a href="{{ route('products.massage_oil') }}">Massage oil</a></li>
                                         <li><a href="{{ route('products.moroccan_soap') }}">Moroccan Soap</a></li>
                                     </ul>
                                 </li>

@@ -1,8 +1,12 @@
 @extends('layouts.app_main')
 
+@section('title', 'Service | Private Label Manufacturing - details')
+
+@section('meta_description', 'Learn more about our private label manufacturing services, including creating custom beauty products tailored to your brand. Download our catalog and get in touch for personalized support and guidance.')
+
+
+
 @section('content')
-
-
 <main class="main">
 
     <!-- Page Title -->
@@ -63,7 +67,7 @@
                 </div>
 
                 <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-                    <img src="assets/img/services_1.png" alt="" class="img-fluid services-img" loading="lazy">
+                    <img src="assets/img/Private-Label-Manufacturing-service.png" alt="Private Label Manufacturing service" class="img-fluid services-img" loading="lazy">
                 </div>
 
             </div>

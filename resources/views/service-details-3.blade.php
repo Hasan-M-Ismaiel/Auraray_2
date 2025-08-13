@@ -1,10 +1,11 @@
 @extends('layouts.app_main')
 
+@section('title', 'Service | Exporting & Delivery Services - details')
+
+@section('meta_description', 'Al Enayah Al Kamlah provides reliable exporting and delivery services for AuraRay beauty products, ensuring timely and secure shipping worldwide. Download our catalog and contact us for seamless global distribution solutions.')
+
 @section('content')
-
-
 <main class="main">
-
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
         <div class="heading">
@@ -63,7 +64,7 @@
                 </div>
 
                 <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-                    <img src="assets/img/services_3.png" alt="" class="img-fluid services-img" loading="lazy">
+                    <img src="assets/img/Exporting-and-Delivery-Services.png" alt="Exporting & Delivery Services image" class="img-fluid services-img" loading="lazy">
                 </div>
 
             </div>

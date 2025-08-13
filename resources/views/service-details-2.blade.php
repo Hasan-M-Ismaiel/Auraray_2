@@ -1,8 +1,11 @@
 @extends('layouts.app_main')
 
+@section('title', 'Service | Beauty Kits for Hotels - details')
+
+@section('meta_description', 'Discover our luxury beauty kits designed for hotels, featuring premium, salon-quality products that enhance the guest experience. Download our catalog and contact us for personalized hospitality solutions.')
+
+
 @section('content')
-
-
 <main class="main">
 
     <!-- Page Title -->
@@ -63,7 +66,7 @@
                 </div>
 
                 <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-                    <img src="assets/img/services_2.png" alt="" class="img-fluid services-img" loading="lazy">
+                    <img src="assets/img/Beauty-Kits-for-Hotels.png" alt="Beauty Kits for Hotels image" class="img-fluid services-img" loading="lazy">
                 </div>
 
             </div>

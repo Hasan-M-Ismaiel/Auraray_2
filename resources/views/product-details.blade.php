@@ -1,8 +1,10 @@
 @extends('layouts.app_main')
 
+@section('title', 'Product | More details of a product')
+
+@section('meta_description', 'Explore detailed information about our product, including category, size, description, ingredients, and key features. Perfect for understanding what makes this product unique and suitable for your needs.')
+
 @section('content')
-
-
 <main class="main">
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">

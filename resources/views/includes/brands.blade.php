@@ -31,7 +31,7 @@
 
                         <!-- Logo -->
                         <div class="brand-logo-container">
-                            <img src="{{ asset('assets/img/logo__.png') }}" alt="Auraray Logo" style="max-width: 215px; height: auto;">
+                            <img src="{{ asset('assets/img/auraray-logo.png') }}" alt="Auraray Logo" style="max-width: 215px; height: auto;">
                         </div>
 
                         <!-- Compact Navigate Button -->
@@ -62,7 +62,7 @@
 
                         <!-- Logo -->
                         <div class="brand-logo-container">
-                            <img src="{{ asset('assets/img/logo_2.png') }}" alt="Beauty and Vitamins Logo" style="max-width: 200px; height: auto;">
+                            <img src="{{ asset('assets/img/beauty-and-vitamins-logo.png') }}" alt="Beauty and Vitamins Logo" style="max-width: 200px; height: auto;">
                         </div>
 
                         <!-- Compact Navigate Button -->

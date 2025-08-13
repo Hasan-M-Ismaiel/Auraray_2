@@ -1,8 +1,10 @@
 @extends('layouts.app_main')
 
+@section('title', 'Product | Baby bath - details - Baby care')
+
+@section('meta_description', 'Explore our baby bath products, featuring a variety of colors and sizes. Browse our collection to find the perfect bath essentials for your little one.')
+
 @section('content')
-
-
 <main class="main">
 
     <!-- Page Title -->

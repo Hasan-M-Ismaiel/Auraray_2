@@ -1,8 +1,10 @@
 @extends('layouts.app_main')
 
+@section('title', 'Product | Lotion - details - Skin care')
+
+@section('meta_description', 'Explore our luxurious lotion collection, designed to deeply moisturize and nourish your skin. Available in a variety of scents and sizes, these lotions leave your skin soft, smooth, and refreshed.')
+
 @section('content')
-
-
 <main class="main">
 
     <!-- Page Title -->

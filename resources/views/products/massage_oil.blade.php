@@ -1,8 +1,11 @@
 @extends('layouts.app_main')
 
+@section('title', 'Product | Massage Oil  - details - Skin care')
+
+@section('meta_description', 'Experience ultimate relaxation with our soothing massage oils. Enriched with natural extracts and gentle fragrances, they help relieve tension, nourish the skin, and promote a calming, rejuvenating experience.')
+
+
 @section('content')
-
-
 <main class="main">
 
     <!-- Page Title -->

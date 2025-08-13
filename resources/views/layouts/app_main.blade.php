@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Al Enayah Al Kamlah</title>
-    <meta name="description" content="AuraRay by Al Enayah Al Kamlah: Premium cosmetic products for hair salons. Offering professional-grade hair care, shaving & grooming, and skin care essentials.">
-    <meta name="keywords" content="AuraRay, Al Enayah Al Kamlah, hair salon products, premium cosmetics, professional hair care, shaving gel, skin care products, shampoo, conditioner, hair gel, face scrub, body lotion, body wash, shower gel, oil massage, salon supplies, private label cosmetics, contract manufacturing, salon-grade products">
+    <title>@yield('title', 'Al Enayah Al Kamlah')</title>
+    <meta name="description" content="@yield('meta_description', 'Al Enayah Al Kamlah Excellence in Beauty Manufacturing. At Al Enayah Al Kamlah, we are proud to be a trusted leader in crafting and supplying top-tier cosmetic tools and professional-grade beauty products. With decades of experience in the beauty industry, we proudly serve salons, spas, and global retailers by delivering an extensive range of premium solutions thoughtfully designed to meet the unique needs of both beauty professionals and consumers.')">
+    <meta name="keywords" content="excellence in beauty manufacturing, trusted leader, cosmetic tools, professional-grade beauty products, decades of experience, beauty industry, salons, spas, global retailers, premium solutions, thoughtfully designed, unique needs, beauty professionals, consumers, auraray, Al Enayah Al Kamlah, Hair care, skincare, shaving, grooming essentials, salon-focused, private label manufacturing, custom product development, bespoke packaging solutions, expertly formulated, effective ingredients, luxurious textures, captivating fragrance profiles, uncompromising quality, safety, ISO certifications, dedicated customer support, 24/7 assistance, seamless assistance, empowering beauty businesses, reliable, sophisticated, performance-driven, signature brands, inspired innovation, flawless execution, unique beauty visions">
     <meta name="author" content="Al Enayah Al Kamlah Manufacture of Cosmetic Tools & Supply L.L.C.">
     <meta name="robots" content="index, follow">
 

@@ -1,8 +1,11 @@
 @extends('layouts.app_main')
 
+@section('title', 'Product | Conditioner - details - Hair care')
+
+@section('meta_description', 'Discover our nourishing conditioner collection, enriched with natural extracts to strengthen and smooth your hair. Perfect for all hair types, available in various sizes to suit your hair care routine')
+
+
 @section('content')
-
-
 <main class="main">
 
     <!-- Page Title -->

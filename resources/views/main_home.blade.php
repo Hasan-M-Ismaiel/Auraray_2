@@ -6,25 +6,12 @@
 @include('includes.hero_section')
 <!-- End Hero Area -->
 
-
-<!-- Start Why us Area -->
-
-<!-- End Why us Area -->
-
-
-<!-- Start Hero Area -->
-<!--  @__include('includes.ingredients') -->
-<!-- End Hero Area -->
-
 <!-- Start products Area -->
 @include('includes.products')
 <!-- End products Area -->
 
 <!-- Start brands Area -->
 @include('includes.brands')
-<!-- End brands Area -->
-
-<!-- Start brands Area -->
 <!-- End brands Area -->
 
 <!-- Start services Area -->

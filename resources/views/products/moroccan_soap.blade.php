@@ -1,8 +1,10 @@
 @extends('layouts.app_main')
 
+@section('title', 'Product | Moroccan Soap  - details - Skin care')
+
+@section('meta_description', 'Discover the natural cleansing power of our Moroccan Soap. Crafted with traditional ingredients, it gently exfoliates, purifies, and nourishes your skin, leaving it soft, smooth, and radiant.')
+
 @section('content')
-
-
 <main class="main">
 
     <!-- Page Title -->

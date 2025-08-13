@@ -1,8 +1,10 @@
 @extends('layouts.app_main')
 
+@section('title', 'Product | Baby Shampoo - details - Baby care')
+
+@section('meta_description', 'Explore our gentle baby shampoo collection, specially formulated to cleanse and care for delicate baby hair and scalp. Available in a variety of colors and sizes to meet your baby care needs.')
+
 @section('content')
-
-
 <main class="main">
 
     <!-- Page Title -->

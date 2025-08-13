@@ -1,8 +1,10 @@
 @extends('layouts.app_main')
 
+@section('title', 'Product | Shower Gel  - details - Skin care')
+
+@section('meta_description', 'Our Shower Gel gently cleanses and refreshes your skin, leaving it soft, smooth, and delicately fragranced. Enriched with natural extracts, it nourishes while providing a revitalizing and indulgent shower experience.')
+
 @section('content')
-
-
 <main class="main">
 
     <!-- Page Title -->
