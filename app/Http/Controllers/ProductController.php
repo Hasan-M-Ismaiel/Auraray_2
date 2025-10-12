@@ -110,7 +110,7 @@ class ProductController extends Controller
 
     public function showhair_treatment(Product $Product)
     {
-        $products = Product::where('type', 'Hair teatment')->get();
+        $products = Product::where('type', 'Hair treatment')->get();
         return view('products.hair_treatment', compact('products'));
     }
 
@@ -128,19 +128,19 @@ class ProductController extends Controller
 
     public function showface_body_cream(Product $Product)
     {
-        $products = Product::where('type', 'Face body cream')->get();
+        $products = Product::where('type', 'Face and body cream')->get();
         return view('products.face_body_cream', compact('products'));
     }
 
     public function showface_body_mud_mask(Product $Product)
     {
-        $products = Product::where('type', 'Face body mud mask')->get();
+        $products = Product::where('type', 'Face and body mud mask')->get();
         return view('products.face_body_mud_mask', compact('products'));
     }
 
     public function showface_body_scrub(Product $Product)
     {
-        $products = Product::where('type', 'Face body scrub')->get();
+        $products = Product::where('type', 'Face and body scrub')->get();
         return view('products.face_body_scrub', compact('products'));
     }
 
