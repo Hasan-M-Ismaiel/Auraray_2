@@ -21,16 +21,28 @@ Route::get('/product/{product}', [MainHomeController::class, 'showProduct'])->na
 // Route::get('/products', [MainHomeController::class, 'products'])->name('products');
 
 
+// hair care
 Route::get('/products/shampoo', [ProductController::class, 'showShampoo'])->name('products.shampoo');
-Route::get('/products/lotion', [ProductController::class, 'showlotion'])->name('products.lotion');
-Route::get('/products/massage_oil', [ProductController::class, 'showmassage_oil'])->name('products.massage_oil');
-Route::get('/products/shower_scrub', [ProductController::class, 'showshower_scrub'])->name('products.shower_scrub');
-Route::get('/products/shower_gel', [ProductController::class, 'showshower_gel'])->name('products.shower_gel');
-Route::get('/products/mask', [ProductController::class, 'showmask'])->name('products.mask');
-Route::get('/products/moroccan_soap', [ProductController::class, 'showmoroccan_soap'])->name('products.moroccan_soap');
 Route::get('/products/conditioner', [ProductController::class, 'showconditioner'])->name('products.conditioner');
 Route::get('/products/serum', [ProductController::class, 'showserum'])->name('products.serum');
+Route::get('/products/mask', [ProductController::class, 'showmask'])->name('products.mask');
+Route::get('/products/hair_treatment', [ProductController::class, 'showhair_treatment'])->name('products.hair_treatment');
 
+// face care 
+Route::get('/products/face_body_cream', [ProductController::class, 'showface_body_cream'])->name('products.face_body_cream');
+Route::get('/products/face_body_mud_mask', [ProductController::class, 'showface_body_mud_mask'])->name('products.face_body_mud_mask');
+Route::get('/products/face_body_scrub', [ProductController::class, 'showface_body_scrub'])->name('products.face_body_scrub');
+
+// skin care
+Route::get('/products/lotion', [ProductController::class, 'showlotion'])->name('products.lotion');
+Route::get('/products/shower_gel', [ProductController::class, 'showshower_gel'])->name('products.shower_gel');
+Route::get('/products/shower_scrub', [ProductController::class, 'showshower_scrub'])->name('products.shower_scrub');
+Route::get('/products/massage_oil', [ProductController::class, 'showmassage_oil'])->name('products.massage_oil');
+Route::get('/products/moroccan_soap', [ProductController::class, 'showmoroccan_soap'])->name('products.moroccan_soap');
+Route::get('/products/whitening_body_lotion', [ProductController::class, 'showwhitening_body_lotion'])->name('products.whitening_body_lotion');
+Route::get('/products/alcohol', [ProductController::class, 'showalcohol'])->name('products.alcohol');
+
+// baby care
 Route::get('/products/baby_bath', [ProductController::class, 'showbaby_bath'])->name('products.baby_bath');
 Route::get('/products/baby_cologne', [ProductController::class, 'showbaby_cologne'])->name('products.baby_cologne');
 Route::get('/products/baby_lotion', [ProductController::class, 'showbaby_lotion'])->name('products.baby_lotion');
