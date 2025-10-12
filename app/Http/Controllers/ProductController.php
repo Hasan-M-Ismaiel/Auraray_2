@@ -108,6 +108,41 @@ class ProductController extends Controller
         return view('products.baby_shampoo', compact('products'));
     }
 
+    public function showhair_treatment(Product $Product)
+    {
+        $products = Product::where('type', 'Hair teatment')->get();
+        return view('products.hair_treatment', compact('products'));
+    }
+
+    public function showwhitening_body_lotion(Product $Product)
+    {
+        $products = Product::where('type', 'Whitening body lotion')->get();
+        return view('products.whitening_body_lotion', compact('products'));
+    }
+
+    public function showalcohol(Product $Product)
+    {
+        $products = Product::where('type', 'Alcohol')->get();
+        return view('products.alcohol', compact('products'));
+    }
+
+    public function showface_body_cream(Product $Product)
+    {
+        $products = Product::where('type', 'Face body cream')->get();
+        return view('products.face_body_cream', compact('products'));
+    }
+
+    public function showface_body_mud_mask(Product $Product)
+    {
+        $products = Product::where('type', 'Face body mud mask')->get();
+        return view('products.face_body_mud_mask', compact('products'));
+    }
+
+    public function showface_body_scrub(Product $Product)
+    {
+        $products = Product::where('type', 'Face body scrub')->get();
+        return view('products.face_body_scrub', compact('products'));
+    }
 
 
     // new API call

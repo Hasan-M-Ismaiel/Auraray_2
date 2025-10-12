@@ -20,6 +20,14 @@
                                         <li><a href="{{ route('products.conditioner') }}">Conditioner</a></li>
                                         <li><a href="{{ route('products.serum') }}">Serum</a></li>
                                         <li><a href="{{ route('products.mask') }}">Mask</a></li>
+                                        <li><a href="{{ route('products.hair_treatment') }}">Hair treatment</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#"><span>Face care</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                                    <ul>
+                                        <li><a href="{{ route('products.face_body_cream') }}">Face & body cream</a></li>
+                                        <li><a href="{{ route('products.face_body_mud_mask') }}">Face & body mud mask</a></li>
+                                        <li><a href="{{ route('products.face_body_scrub') }}">Face & body scrub</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown"><a href="#"><span>Skin care</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -29,6 +37,8 @@
                                         <li><a href="{{ route('products.shower_scrub') }}">Shower scrub</a></li>
                                         <li><a href="{{ route('products.massage_oil') }}">Massage oil</a></li>
                                         <li><a href="{{ route('products.moroccan_soap') }}">Moroccan Soap</a></li>
+                                        <li><a href="{{ route('products.whitening_body_lotion') }}">Whitening body lotion</a></li>
+                                        <li><a href="{{ route('products.alcohol') }}">Alcohol</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown"><a href="#"><span>Baby care</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -52,7 +62,7 @@
                 <li><a href="{{ route('home') }}#services">Services</a></li>
                 <li><a href="{{ route('home') }}#Quality">Quality</a></li>
                 <li><a href="{{ route('home') }}#contact ">Contact Us</a></li>
-                <li><a href="{{ asset('assets/catalog/Auraray.pdf') }}"><i class="bi bi-download me-2" id="Catalog_icon"></i>Catalog</a></li>
+                <li><a target="_blank" href="https://drive.google.com/file/d/1HB3gBQOTBIYnMsGl6sNfuNjwEWFkjG8l/view?usp=sharing"><i class="bi bi-download me-2" id="Catalog_icon"></i>Catalog</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>

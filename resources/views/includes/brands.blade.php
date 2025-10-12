@@ -12,6 +12,8 @@
         /* same as mb-3 */
     }
 </style>
+
+
 <!-- Brands Section with Toggle -->
 <section id="brand" class="product section">
     <!-- Section Title -->
@@ -54,7 +56,6 @@
                     </div>
                 </div>
 
-
                 <!-- Beauty and Vitamins Brand Card -->
                 <div class="col-md-6 mb-4" x-data="{ expanded: false }">
                     <div class="p-5 bg-light shadow-sm hover-shadow rounded border d-flex flex-column"
@@ -87,7 +88,6 @@
 
             </div>
 
-
             <!-- Step 2: Brand -> Categories -->
             <div x-show="step === 'categories'" x-transition>
                 <button class="btn btn-sm btn-outline-secondary mb-3" @click="goBack()">← Back</button>
@@ -101,6 +101,20 @@
                             style="cursor: pointer; transition: all 0.3s ease;">
                             <template x-if="brand === 'Auraray'">
                                 <h5>Hair Care</h5>
+                            </template>
+                            <template x-if="brand === 'Beauty and Vitamins'">
+                                <p class="text-muted mt-2">Coming soon</p>
+                            </template>
+                        </div>
+                    </div>
+                    <!-- Face Care -->
+                    <div class="col-md-4">
+                        <div class="p-4 bg-light rounded border shadow-sm hover-shadow"
+                            :class="{ 'cursor-pointer': brand === 'Auraray' }"
+                            @click="brand === 'Auraray' ? selectCategory('Face care') : showComingSoon()"
+                            style="cursor: pointer; transition: all 0.3s ease;">
+                            <template x-if="brand === 'Auraray'">
+                                <h5>Face Care</h5>
                             </template>
                             <template x-if="brand === 'Beauty and Vitamins'">
                                 <p class="text-muted mt-2">Coming soon</p>
@@ -122,7 +136,7 @@
                         </div>
                     </div>
                     <!-- Baby Care -->
-                    <div class="col-md-4">
+                    <div class="col-md-4 mt-1">
                         <div class="p-4 bg-light rounded border shadow-sm hover-shadow"
                             :class="{ 'cursor-pointer': brand === 'Auraray' }"
                             @click="brand === 'Auraray' ? selectCategory('Baby care') : showComingSoon()"
@@ -135,7 +149,6 @@
                             </template>
                         </div>
                     </div>
-
                 </div>
             </div>
 
@@ -156,7 +169,6 @@
                 </div>
             </div>
 
-
             <!-- Step 4: Product List -->
             <div x-show="step === 'products'" x-transition>
                 <button class="btn btn-sm btn-outline-secondary mb-3" @click="goBack()">← Back</button>
@@ -172,6 +184,10 @@
 
                                         <template x-if="product.category === 'Hair Care'">
                                             <p class="card-text" x-text="product.category + ' - ' + product.extract"></p>
+                                        </template>
+
+                                        <template x-if="product.category === 'Face Care'">
+                                            <p class="card-text" x-text="product.category + ' - ' + product.flavor"></p>
                                         </template>
 
                                         <template x-if="product.category === 'Skin Care'">
@@ -215,8 +231,9 @@
 
             getTypes() {
                 const map = {
-                    'Hair care': ['Shampoo', 'Conditioner', 'Serum', 'Mask'],
-                    'Skin care': ['Lotion', 'Shower gel', 'Shower scrub', 'Massage oil', 'Moroccan Soap'],
+                    'Hair care': ['Shampoo', 'Conditioner', 'Serum', 'Mask', 'Hair treatment'],
+                    'Face care': ['Face and body cream', 'Face and body mud mask', 'Face and body scrub'],
+                    'Skin care': ['Lotion', 'Shower gel', 'Shower scrub', 'Massage oil', 'Moroccan Soap', 'Whitening body lotion', 'Alcohol'],
                     'Baby care': ['Baby bath', 'Baby cologne', 'Baby lotion', 'Baby oil', 'Baby shampoo'],
                 };
                 return map[this.category] || [];
