@@ -41,7 +41,7 @@
 
         <div class="container">
             @if ($products->count())
-            <h4 class="mb-4 text-center fw-bold border-bottom pb-2">Lotion</h4>
+            <h4 class="mb-4 text-center fw-bold border-bottom pb-2">Hair treatment</h4>
             <div class="row gx-3 gy-4 justify-content-center">
                 @foreach ($products as $product)
                     <div class="col-lg-4 col-md-4 col-sm-2">
