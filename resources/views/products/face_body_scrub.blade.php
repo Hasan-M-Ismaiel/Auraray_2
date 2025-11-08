@@ -2,7 +2,7 @@
 
 @section('title', 'Product | Face and Body scrub - details - Face care')
 
-@section('meta_description', 'This exfoliating face and body scrub is designed to gently remove dead skin cells, unclog pores, and reveal smoother, brighter skin. Enriched with nourishing ingredients and available in six refreshing scents, it leaves your skin feeling soft, polished, and rejuvenated. Suitable for all skin types, it's the perfect addition to your skincare routine for a fresh, radiant glow from head to toe.')
+@section('meta_description', "This exfoliating face and body scrub is designed to gently remove dead skin cells, unclog pores, and reveal smoother, brighter skin. Enriched with nourishing ingredients and available in six refreshing scents, it leaves your skin feeling soft, polished, and rejuvenated. Suitable for all skin types, it's the perfect addition to your skincare routine for a fresh, radiant glow from head to toe.")
 
 
 @section('content')

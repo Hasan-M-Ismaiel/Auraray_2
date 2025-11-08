@@ -2,7 +2,7 @@
 
 @section('title', 'Product | face and body cream - details - Face care')
 
-@section('meta_description', 'A luxuriously rich and fast-absorbing formula designed to deeply nourish, hydrate, and soften the skin from head to toe. This multipurpose cream restores skin’s natural moisture balance, leaving it visibly smoother, more radiant, and delicately scented. Perfect for daily use to maintain supple, healthy-looking skin.')
+@section('meta_description', "A luxuriously rich and fast-absorbing formula designed to deeply nourish, hydrate, and soften the skin from head to toe. This multipurpose cream restores skin’s natural moisture balance, leaving it visibly smoother, more radiant, and delicately scented. Perfect for daily use to maintain supple, healthy-looking skin.")
 
 
 @section('content')

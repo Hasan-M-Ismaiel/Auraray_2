@@ -2,7 +2,7 @@
 
 @section('title', 'Product | Face and Body mud mask - details - Face care')
 
-@section('meta_description', 'A rejuvenating mask treatment for face and body that detoxifies, hydrates, and brightens in one simple step. Whether you're targeting dullness, uneven texture, or tired skin, this mask delivers a spa-like experience, drawing out impurities while nourishing your skin for a soft, radiant finish.')
+@section('meta_description', "A rejuvenating mask treatment for face and body that detoxifies, hydrates, and brightens in one simple step. Whether you're targeting dullness, uneven texture, or tired skin, this mask delivers a spa-like experience, drawing out impurities while nourishing your skin for a soft, radiant finish.")
 
 
 @section('content')
@@ -44,19 +44,19 @@
             <h4 class="mb-4 text-center fw-bold border-bottom pb-2">Lotion</h4>
             <div class="row gx-3 gy-4 justify-content-center">
                 @foreach ($products as $product)
-                    <div class="col-lg-4 col-md-4 col-sm-2">
-                        <a href="{{ route('product', [$product->id]) }}" class="d-block text-center">
-                            <div class="card border-0 shadow-sm h-100">
-                                <img src="{{ asset($product->image) }}" alt="{{ $product->type }} Product"
-                                    class="img-fluid" style="aspect-ratio: 1 / 1; object-fit: cover;" loading="lazy">
-                                <div class="p-3 text-start">
-                                    <!-- <h6 class="fw-bold text-dark mb-1">{{ ucfirst($product->type) }}</h6> -->
-                                    <p class="mb-0 text-muted small">{{ ucfirst($product->color) }}</p>
-                                    <p class="mb-0 text-muted small">{{ strtoupper($product->size) }}</p>
-                                </div>
+                <div class="col-lg-4 col-md-4 col-sm-2">
+                    <a href="{{ route('product', [$product->id]) }}" class="d-block text-center">
+                        <div class="card border-0 shadow-sm h-100">
+                            <img src="{{ asset($product->image) }}" alt="{{ $product->type }} Product"
+                                class="img-fluid" style="aspect-ratio: 1 / 1; object-fit: cover;" loading="lazy">
+                            <div class="p-3 text-start">
+                                <!-- <h6 class="fw-bold text-dark mb-1">{{ ucfirst($product->type) }}</h6> -->
+                                <p class="mb-0 text-muted small">{{ ucfirst($product->color) }}</p>
+                                <p class="mb-0 text-muted small">{{ strtoupper($product->size) }}</p>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
+                </div>
                 @endforeach
             </div>
 

@@ -2,7 +2,7 @@
 
 @section('title', 'Product | Alcohol - details - Skin care')
 
-@section('meta_description', 'Hydrating Creams: Formulated with powerful conditioning agents, these creams provide long-lasting moisture to keep your skin supple throughout the day')
+@section('meta_description', "A multipurpose solution ideal for cleansing and sanitizing the skin. Effectively removes impurities, disinfects surfaces, and refreshes the body with a clean, cooling sensation. Perfect for daily hygiene, first aid, or on-the-go use.")
 
 
 @section('content')

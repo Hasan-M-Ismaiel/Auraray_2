@@ -2,7 +2,7 @@
 
 @section('title', 'Product | Whitening body lotion - details - Skin care')
 
-@section('meta_description', 'Explore our baby lotion collection, featuring gentle formulas in various colors and sizes to keep your little one’s skin soft, nourished, and cared for.')
+@section('meta_description', 'This lightweight, quick-absorbing lotion is specially formulated to brighten and even out skin tone while delivering long-lasting hydration. Enriched with natural extracts and whitening agents, it helps restore your skin’s natural glow, leaving it visibly smoother, softer, and more luminous over time.')
 
 
 @section('content')
@@ -41,7 +41,7 @@
 
         <div class="container">
             @if ($products->count())
-            <h4 class="mb-4 text-center fw-bold border-bottom pb-2">Lotion</h4>
+            <h4 class="mb-4 text-center fw-bold border-bottom pb-2">Whitening body lotion</h4>
             <div class="row gx-3 gy-4 justify-content-center">
                 @foreach ($products as $product)
                     <div class="col-lg-4 col-md-4 col-sm-2">

@@ -2,7 +2,7 @@
 
 @section('title', 'Product | Hair treatment - details - Hair care')
 
-@section('meta_description', 'This intensive hair treatment is expertly formulated to restore strength, shine, and softness to dry, damaged, or chemically treated hair. It penetrates deeply to repair from within, reduce breakage, and improve manageability. Ideal for all hair types, this treatment leaves hair feeling deeply conditioned, visibly healthier, and luxuriously smooth after every use.')
+@section('meta_description', "This intensive hair treatment is expertly formulated to restore strength, shine, and softness to dry, damaged, or chemically treated hair. It penetrates deeply to repair from within, reduce breakage, and improve manageability. Ideal for all hair types, this treatment leaves hair feeling deeply conditioned, visibly healthier, and luxuriously smooth after every use.")
 
 
 @section('content')
