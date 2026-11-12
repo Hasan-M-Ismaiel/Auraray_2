@@ -53,7 +53,7 @@
                             <a href="https://www.facebook.com/AlenayahAlkamlah"><span class="bi bi-facebook"></span></a>
                         </li>
                         <li>
-                            <a href="#"><span class="bi bi-linkedin"></span></a>
+                            <a href="https://www.linkedin.com/company/al-enayah-al-kamlah/home/"><span class="bi bi-linkedin"></span></a>
                         </li>
                     </ul>
                 </div>
@@ -83,9 +83,9 @@
         </div>
 
         <div class="copyright d-flex flex-column flex-md-row align-items-center justify-content-md-between">
-            <p>© <span>Copyright</span> <strong class="px-1 sitename">Al Enayah Al Kamlah</strong> <span>All Rights Reserved</span></p>
+            <p>© <span>Copyright - 2026</span> <strong class="px-1 sitename">Al Enayah Al Kamlah</strong> <span>All Rights Reserved</span></p>
             <div class="credits">
-                Made with love UAE-2025
+                Made with love UAE
             </div>
         </div>
     </div>
